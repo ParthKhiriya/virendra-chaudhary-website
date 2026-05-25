@@ -112,9 +112,12 @@ export default function Honours() {
           <div 
             id="honours-slider"
             ref={sliderRef} 
-            className="flex overflow-x-auto md:grid md:grid-cols-3 gap-4 md:gap-8 xl:gap-12 w-full pb-4 md:pb-0 px-[7.5vw] md:px-0 snap-x snap-mandatory"
+            className="flex overflow-x-auto md:grid md:grid-cols-3 gap-4 md:gap-8 xl:gap-12 pb-4 md:pb-0 snap-x snap-mandatory w-screen max-w-[100vw] relative left-1/2 -translate-x-1/2 md:w-full md:left-auto md:translate-x-0 md:px-0"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
+            {/* Start spacer for perfect centering on mobile */}
+            <div className="shrink-0 w-[calc(7.5vw-1rem)] md:hidden" />
+            
             {columns.map((col, idx) => (
               <div 
                 key={idx}
@@ -148,6 +151,9 @@ export default function Honours() {
                 </div>
               </div>
             ))}
+            
+            {/* End spacer for perfect centering on mobile */}
+            <div className="shrink-0 w-[calc(7.5vw-1rem)] md:hidden" />
           </div>
 
           {/* Mobile Slider Controls */}

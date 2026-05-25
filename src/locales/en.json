@@ -1,0 +1,195 @@
+{
+  "translation": {
+    "hero": {
+      "title": "Virendra Chaudhary",
+      "subtitle": "A life — that walked alongside society."
+    },
+    "about": {
+      "title": "Introduction",
+      "p1": "Virendra Chaudhary's life is a story of values where success is measured by responsibility towards society. Through his actions, he has made honesty, service, and dedication his core principles. His deep sensitivity towards social concerns is clearly visible in every decision and effort. His continuous endeavor for the upliftment of every section of society reflects his visionary leadership. He believes that development is truly meaningful only when its benefits reach the last person. His life inspires us that true success is one that moves forward taking society along.",
+      "p2": "With his experience, knowledge, and sensitive approach, Virendra Chaudhary has made public service not just a duty but the very purpose of his life. He believes that positive change is only possible through dialogue, participation, and continuous effort. Understanding public issues and finding practical solutions has been the main foundation of his working style. Empowering the youth of the society and guiding them in the right direction is among his top priorities.",
+      "pointers": [
+        {
+          "title": "Birth & Early Education",
+          "desc": "Born in a simple family environment, laid a strong foundation through early education."
+        },
+        {
+          "title": "Global Technical Studies",
+          "desc": "Pursued higher education from India to Australia to expand technical knowledge."
+        },
+        {
+          "title": "Teaching & Telecom",
+          "desc": "Promoted innovation and development by being active in the education and telecommunications sector."
+        },
+        {
+          "title": "Industry & Entrepreneurship",
+          "desc": "Worked on job creation and economic empowerment through entrepreneurship."
+        },
+        {
+          "title": "Educational Institutions",
+          "desc": "Established and supported educational institutions for quality education."
+        },
+        {
+          "title": "Social Leadership",
+          "desc": "Prioritized responsible leadership and public service for the upliftment of society."
+        }
+      ]
+    },
+    "aboutPage": {
+      "personalDetails": "According to personal details, the birth year is 1969 and the permanent address is Mundwa Road, Nagaur, Rajasthan. Regarding educational qualifications, he obtained his M.Tech degree in Information Technology and Telecommunications from the University of South Australia between 1994 and 1995. Prior to this, he completed his B.E. in Electronics Engineering from Amravati University, Maharashtra (1987-1991). His school education was completed at Bikaner Boys School, Bikaner from 1976 to 1987.",
+      "timeline": [
+        { "year": "1991–1993", "title": "Lecturer", "org": "Maharaja Surajmal Institute of Technology, New Delhi", "desc": "Teaching and Management" },
+        { "year": "1996–1997", "title": "Telecom Consultant", "org": "Saturn Telecommunications Ltd., New Delhi", "desc": "Telecom Consultancy" },
+        { "year": "1998–Present", "title": "Mahindra Vehicle Dealer", "org": "Nagaur Automobiles Pvt. Ltd.", "desc": "Currently managed by younger brother" },
+        { "year": "2000–Present", "title": "Tata Passenger Cars Dealer", "org": "Marwar Motors Pvt. Ltd., Bikaner", "desc": "Awarded Best Dealer (2002–03, 2005–06)" },
+        { "year": "2002–Present", "title": "Management", "org": "Baldevram Mirdha Institute of Technology", "desc": "Engineering Institute Management" },
+        { "year": "2006–Present", "title": "Management", "org": "BMIT East Campus", "desc": "Engineering Institute Management" },
+        { "year": "2009–Present", "title": "Management", "org": "Maharani Kishori Devi Girls School, Bikaner", "desc": "Girls' Residential School Management" }
+      ],
+      "socialWork": {
+        "title": "Social Work & Contributions",
+        "p1": "Under his former role, he served as a member of the Board of Studies for Management at Rajasthan Technical University, Kota from 2006 to 2008.",
+        "p2": "In terms of social work, he has been actively associated with HelpAge India for the welfare of the elderly. Under healthcare, he contributed to the organization and participation of eye camps, health camps, and blood donation camps. In the field of divyang (differently-abled) service, he worked for the welfare of the blind and deaf-mute through the Blind School in Sriganganagar. Additionally, he played an active role in community participation-based programs for rural development. He encouraged rural and residential education initiatives for girls. In the direction of environmental conservation, he made a remarkable contribution by planting 1,05,000 saplings in just 3 minutes and 50 seconds in Gajsukhdesar village on August 4, 2008.",
+        "quote": "\"Dedication to service, education, and society is the foundation of true success.\""
+      },
+      "awards": {
+        "title": "Awards & Recognitions",
+        "items": [
+          { "year": "2005–06", "title": "Social Responsibility Award", "desc": "" },
+          { "year": "2006", "title": "Social Work Honour", "desc": "" },
+          { "year": "2002–03, 2005–06", "title": "Best Customer Service Award", "desc": "" },
+          { "year": "Education, Environment, Sports & Culture", "title": "Diverse Honours", "desc": "" }
+        ]
+      },
+      "affiliations": {
+        "title": "Leadership & Affiliations",
+        "table": {
+          "role": "Role / Post",
+          "org": "Organization / Institute",
+          "loc": "Location",
+          "desc": "Details / Focus Area"
+        },
+        "items": [
+          { "role": "Former President", "org": "Federation of Rajasthan Trade and Industry (FORTI)", "loc": "Bikaner", "desc": "Industrial Development & Govt. Coordination" },
+          { "role": "Former President", "org": "Marubhumi Seva Avam Anusandhan Sansthan", "loc": "Bikaner", "desc": "RTI, Rural Development, Environment" },
+          { "role": "Treasurer", "org": "Maharani Kishori Devi Balika Shikshan Sansthan", "loc": "Bikaner", "desc": "Residential Education for Rural Girls" },
+          { "role": "Former Vice President", "org": "Gramothan Vidyapeeth Sansthan", "loc": "Didwana, Nagaur", "desc": "Rural Girl Child Education" },
+          { "role": "Former Vice President", "org": "Rajasthan Rifle Association", "loc": "Jaipur", "desc": "Affiliated with IOA & NRAI" },
+          { "role": "Executive Member", "org": "Maharaja Surajmal Memorial Society", "loc": "Delhi", "desc": "Education & Social Research" },
+          { "role": "Executive Member", "org": "Chaudhary Moolaram Memorial Education Society", "loc": "Nagaur", "desc": "BMIT Institute" },
+          { "role": "Patron", "org": "Rajasthan Youth Club", "loc": "Bikaner", "desc": "Education & Social Assistance" },
+          { "role": "Former President", "org": "Nagaur Rifle Shooting Association", "loc": "Nagaur", "desc": "Shooting Sports Promotion" },
+          { "role": "Former Member", "org": "Rotary Club, Lions Club, HelpAge India", "loc": "Bikaner", "desc": "Social Service" }
+        ]
+      }
+    },
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "foundation": "Foundation",
+      "gallery": "Gallery",
+      "news": "News",
+      "contact": "Contact",
+      "contacts": "Contacts"
+    },
+    "honours": {
+      "title": "Honour, Service & Leadership",
+      "col1": {
+        "title": "Social Service & Environment",
+        "text": "His social work has not been limited to institutional positions. He has been actively associated with organizations like HelpAge India, Rotary Club, Lions Club, and the School for the Blind (Divyang Seva). On August 4, 2008, in village Gajsukhdesar, planting 1,05,000 saplings in just 3 minutes and 50 seconds with the participation of 15,000 villagers was a historic socio-environmental contribution of his life."
+      },
+      "col2": {
+        "title": "Honour & Recognition",
+        "text": "For his social contributions, he was honored with the Social Responsibility Award by the Governor of Rajasthan, Smt. Pratibha Patil. Additionally, he has received accolades for girl-child education, environmental conservation, sports, and social service from various organizations, including the Swami Keshwanand Vikas Samiti."
+      },
+      "col3": {
+        "title": "Personality & Vision",
+        "text": "Mr. Virendra Chaudhary's personality is built on restraint, simplicity, foresight, and institutional thinking. He believes the true value of success is realized when its benefits reach the last person in society. His life is a strong example of the balance between entrepreneurship and social responsibility. His leadership has been based on service, ethics, and inclusive development. He prioritizes national interest and social harmony over personal success. His vision inspires the building of an empowered, self-reliant, and responsible society for future generations. His life teaches that true leadership stems from humility and public welfare."
+      }
+    },
+    "education": {
+      "title": "Transformation through Education",
+      "desc": "Institutional efforts for rural and girl child education, where opportunities were given with respect."
+    },
+    "news": {
+      "title": "News Coverage"
+    },
+    "contact": {
+      "title": "Contact Details",
+      "call": "Call Us",
+      "visit": "Visit Us",
+      "message": "Let's Connect"
+    },
+    "footer": {
+      "tagline": "A life — that walked alongside society.",
+      "quickLinks": "Quick Links",
+      "contactInfo": "Contact Info",
+      "address": "First India News, No. 9, S.B Tower Ground Floor, Sahakar Marg, Jyothi Nagar, Lalkothi, Jaipur, Rajasthan 302001",
+      "rights": "Mr. Virender Chaudhary © 2026. All Rights Reserved."
+    },
+    "foundationPage": {
+      "title": "Foundation's Major Initiatives",
+      "initiatives": [
+        {
+          "title": "Janpaksh Fellowship Program",
+          "date": "25–26 Jan 2026",
+          "location": "Jaipur",
+          "desc": "The Janpaksh Fellowship Program, organized on 25–26 January 2026 in Jaipur, aimed to train young journalists, digital reporters, and socially conscious citizens for responsible citizen journalism. In this two-day program, sessions were held on topics like the fundamentals of journalism, media ethics, constitutional understanding, mobile journalism, and digital content creation. This program was a structured effort towards empowering civic dialogue and public interest journalism.",
+          "images": [
+            "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/2-2.png",
+            "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/1-2.png",
+            "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/1-6.png",
+            "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/2-6.png",
+            "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/3-6.png",
+            "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/4-4.png"
+          ]
+        },
+        {
+          "title": "Constitution Knowledge Competition",
+          "date": "16 Dec 2025",
+          "location": "Jayal, Nagaur (Rajasthan)",
+          "desc": "On 16 December 2025, a Constitution Knowledge Competition was organized in Jayal, Nagaur (Rajasthan). More than 70 schools participated in this competition. The objective of the program was to develop an understanding among students about the values of the Indian Constitution, equality, justice, and the spirit of fraternity. Through the competition, constitutional awareness was presented in a practical and interactive way in the educational environment.",
+          "images": [
+            "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/1-7.png",
+            "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/2-7.png",
+            "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/3-7.png",
+            "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/4-5.png",
+            "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/5-2.png",
+            "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/6-1.png"
+          ]
+        },
+        {
+          "title": "Janpaksh Conference",
+          "date": "6 Sep 2025",
+          "location": "Constitution Club",
+          "desc": "The Janpaksh Conference was organized on 6 September 2025 at the Constitution Club. The dialogue in this conference focused on subjects related to media, society, and public discourse. The objective of the program was to provide an aggregated and serious platform for public interest discourse, where a balanced discussion on ideas, facts, and democratic values could be possible.",
+          "images": [
+            "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/1-5.png",
+            "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/2-5.png",
+            "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/3-5.png",
+            "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/4-3.png",
+            "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/5-1.png",
+            "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/6.png",
+            "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/7.png",
+            "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/8.png",
+            "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/9.png",
+            "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/10.png",
+            "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/11.png"
+          ]
+        },
+        {
+          "title": "Rajdeep Sardesai Book Launch",
+          "date": "",
+          "location": "Clarks Amer, Jaipur",
+          "desc": "The book launch program of senior journalist Rajdeep Sardesai's book was held at Clarks Amer, Jaipur. During this event, dialogue took place on topics related to journalism, democracy, and contemporary public discourse. The purpose of the event was to encourage book culture and provide a serious and meaningful platform for idea-based dialogue.",
+          "images": [
+            "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/Untitled-design-45.png"
+          ]
+        }
+      ]
+    },
+    "galleryPage": {
+      "title": "Gallery"
+    }
+  }
+}

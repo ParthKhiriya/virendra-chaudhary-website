@@ -1,0 +1,59 @@
+import { useRef, useEffect, Suspense } from 'react';
+import { useTranslation } from 'react-i18next';
+import { Canvas } from '@react-three/fiber';
+import gsap from 'gsap';
+import AbstractGeometry from '../3d/AbstractGeometry';
+
+export default function Hero() {
+  const { t } = useTranslation();
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  const subtitleRef = useRef<HTMLParagraphElement>(null);
+
+  useEffect(() => {
+    if (titleRef.current && subtitleRef.current) {
+      const tl = gsap.timeline();
+      
+      tl.fromTo(
+        titleRef.current,
+        { y: 100, opacity: 0 },
+        { y: 0, opacity: 1, duration: 1.2, ease: 'power4.out', delay: 0.2 }
+      ).fromTo(
+        subtitleRef.current,
+        { y: 50, opacity: 0 },
+        { y: 0, opacity: 1, duration: 1, ease: 'power3.out' },
+        "-=0.8"
+      );
+    }
+  }, [t]);
+
+  return (
+    <section className="relative w-full h-screen overflow-hidden bg-black flex items-center justify-center">
+      {/* 3D Canvas Background with Image and Particles */}
+      <div className="absolute inset-0 z-0">
+        <Canvas camera={{ position: [0, 0, 5], fov: 45 }}>
+          <ambientLight intensity={0.5} />
+          <directionalLight position={[10, 10, 5]} intensity={1} />
+          <Suspense fallback={null}>
+            <AbstractGeometry />
+          </Suspense>
+        </Canvas>
+      </div>
+
+      {/* Kinetic Typography Foreground */}
+      <div className="relative z-10 text-center px-4 mix-blend-difference pointer-events-none">
+        <h1 
+          ref={titleRef}
+          className="text-6xl md:text-8xl lg:text-9xl font-bold uppercase tracking-tighter text-white mb-6"
+        >
+          {t('hero.title')}
+        </h1>
+        <p 
+          ref={subtitleRef}
+          className="text-lg md:text-2xl text-primary font-medium tracking-wide"
+        >
+          {t('hero.subtitle')}
+        </p>
+      </div>
+    </section>
+  );
+}

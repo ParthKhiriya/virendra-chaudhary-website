@@ -16,8 +16,24 @@ export default function Honours() {
 
   const scroll = (direction: 'left' | 'right') => {
     if (sliderRef.current) {
-      const scrollAmount = window.innerWidth * 0.85;
-      sliderRef.current.scrollBy({
+      const slider = sliderRef.current;
+      const { scrollLeft, scrollWidth, clientWidth } = slider;
+      
+      // Calculate exact distance to scroll: distance between first and second card
+      // We use index 1 and 2 because index 0 is our spacer div
+      const card1 = slider.children[1] as HTMLElement;
+      const card2 = slider.children[2] as HTMLElement;
+      let scrollAmount = window.innerWidth * 0.85; // Fallback
+      
+      if (card1 && card2) {
+        scrollAmount = card2.offsetLeft - card1.offsetLeft;
+      }
+
+      // Prevent scrolling if already at boundaries
+      if (direction === 'right' && scrollLeft + clientWidth >= scrollWidth - 10) return;
+      if (direction === 'left' && scrollLeft <= 10) return;
+
+      slider.scrollBy({
         left: direction === 'left' ? -scrollAmount : scrollAmount,
         behavior: 'smooth'
       });

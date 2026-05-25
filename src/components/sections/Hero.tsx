@@ -116,7 +116,7 @@ export default function Hero() {
       </div>
 
       {/* Vignette Overlay for premium depth */}
-      <div className="absolute inset-0 z-10 pointer-events-none bg-[radial-gradient(circle_at_center,transparent_0%,rgba(250,250,250,0.95)_100%)]" />
+      <div className="absolute inset-0 z-10 pointer-events-none bg-[radial-gradient(circle_at_center,transparent_20%,rgba(250,250,250,0.6)_100%)]" />
 
       {/* Kinetic Typography Foreground */}
       <div className="relative z-20 text-center px-4 pointer-events-none">

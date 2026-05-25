@@ -118,7 +118,7 @@ export default function Honours() {
             {columns.map((col, idx) => (
               <div 
                 key={idx}
-                className="flex flex-col group bg-white rounded-2xl md:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border border-gray-100 w-[85vw] max-w-[85vw] md:w-auto md:max-w-none h-[75vh] max-h-[600px] md:h-auto md:max-h-none snap-center md:snap-align-none shrink-0 relative"
+                tabIndex={0} className="flex flex-col group bg-white rounded-2xl md:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl active:shadow-2xl focus:shadow-2xl hover:-translate-y-2 active:-translate-y-2 focus:-translate-y-2 transition-all duration-500 border border-gray-100 w-[85vw] max-w-[85vw] md:w-auto md:max-w-none h-[75vh] max-h-[600px] md:h-auto md:max-h-none snap-center md:snap-align-none shrink-0 relative"
               >
                 {/* Image & Number Header */}
                 <div className="relative shrink-0 w-full">
@@ -126,9 +126,9 @@ export default function Honours() {
                     <img 
                       src={col.image} 
                       alt={col.title}
-                      className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                      tabIndex={0} className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105 group-active:scale-105 group-focus:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div tabIndex={0} className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 group-active:opacity-100 group-focus:opacity-100 transition-opacity duration-500" />
                   </div>
                   {/* Decorative Number */}
                   <div className="absolute bottom-0 right-4 md:right-6 translate-y-1/2 w-10 h-10 md:w-12 md:h-12 bg-primary rounded-full flex items-center justify-center shadow-lg border-4 border-white text-gray-900 font-bold text-lg md:text-xl z-20">
@@ -138,7 +138,7 @@ export default function Honours() {
                 
                 {/* Content */}
                 <div className="p-6 md:p-8 lg:p-10 flex flex-col flex-1 relative overflow-y-auto">
-                  <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6 group-hover:text-primary transition-colors duration-300 pr-8 md:pr-0 shrink-0">
+                  <h3 tabIndex={0} className="text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6 group-hover:text-primary group-active:text-primary group-focus:text-primary transition-colors duration-300 pr-8 md:pr-0 shrink-0">
                     {col.title}
                   </h3>
                   
@@ -154,14 +154,14 @@ export default function Honours() {
           <div className="flex md:hidden justify-center items-center gap-4 mt-6">
             <button 
               onClick={() => scroll('left')}
-              className="w-12 h-12 rounded-full bg-white border border-gray-200 shadow-md flex items-center justify-center text-gray-900 active:scale-95 transition-transform hover:bg-gray-50"
+              className="w-12 h-12 rounded-full bg-white border border-gray-200 shadow-md flex items-center justify-center text-gray-900 active:scale-95 transition-transform hover:bg-gray-50 active:bg-gray-50 focus:bg-gray-50"
               aria-label="Previous slide"
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
             <button 
               onClick={() => scroll('right')}
-              className="w-12 h-12 rounded-full bg-white border border-gray-200 shadow-md flex items-center justify-center text-gray-900 active:scale-95 transition-transform hover:bg-gray-50"
+              className="w-12 h-12 rounded-full bg-white border border-gray-200 shadow-md flex items-center justify-center text-gray-900 active:scale-95 transition-transform hover:bg-gray-50 active:bg-gray-50 focus:bg-gray-50"
               aria-label="Next slide"
             >
               <ChevronRight className="w-6 h-6" />

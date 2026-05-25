@@ -83,19 +83,19 @@ export default function Gallery() {
                   layoutId={`gallery-image-${src}`}
                   src={src} 
                   alt={`Gallery image ${index + 1}`} 
-                  className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000 ease-out"
+                  tabIndex={0} className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 group-active:scale-110 group-focus:scale-110 transition-transform duration-1000 ease-out"
                   loading="lazy"
                 />
                 
                 {/* Modern Hover Gradient & Icon */}
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
-                  <div className="w-14 h-14 rounded-full bg-primary/90 flex items-center justify-center text-gray-900 transform translate-y-10 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500 shadow-[0_0_30px_rgba(255,200,1,0.5)]">
+                <div tabIndex={0} className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/20 to-transparent opacity-0 invisible group-hover:opacity-100 group-active:opacity-100 group-focus:opacity-100 group-hover:visible group-active:visible group-focus:visible transition-all duration-500 flex items-center justify-center">
+                  <div tabIndex={0} className="w-14 h-14 rounded-full bg-primary/90 flex items-center justify-center text-gray-900 transform translate-y-10 group-hover:translate-y-0 group-active:translate-y-0 group-focus:translate-y-0 opacity-0 invisible group-hover:opacity-100 group-active:opacity-100 group-focus:opacity-100 group-hover:visible group-active:visible group-focus:visible transition-all duration-500 shadow-[0_0_30px_rgba(255,200,1,0.5)]">
                     <ZoomIn size={24} />
                   </div>
                 </div>
 
                 {/* Subtle border overlay */}
-                <div className="absolute inset-0 border-2 border-transparent group-hover:border-primary/30 rounded-2xl transition-colors duration-500 pointer-events-none" />
+                <div tabIndex={0} className="absolute inset-0 border-2 border-transparent group-hover:border-primary/30 group-active:border-primary/30 group-focus:border-primary/30 rounded-2xl transition-colors duration-500 pointer-events-none" />
               </motion.div>
             );
           })}
@@ -119,7 +119,7 @@ export default function Gallery() {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.8 }}
               transition={{ delay: 0.2 }}
-              className="absolute top-6 right-6 md:top-8 md:right-8 w-12 h-12 bg-white/10 hover:bg-primary text-white hover:text-gray-900 rounded-full flex items-center justify-center transition-colors duration-300 z-50"
+              className="absolute top-6 right-6 md:top-8 md:right-8 w-12 h-12 bg-white/10 hover:bg-primary active:bg-primary focus:bg-primary text-white hover:text-gray-900 active:text-gray-900 focus:text-gray-900 rounded-full flex items-center justify-center transition-colors duration-300 z-50"
               onClick={(e) => {
                 e.stopPropagation();
                 setSelectedImage(null);

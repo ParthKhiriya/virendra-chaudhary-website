@@ -62,9 +62,9 @@ export default function ContactPage() {
 
           <form 
             onSubmit={handleSubmit}
-            className="bg-white rounded-3xl shadow-[0_0_40px_rgba(255,200,1,0.15)] p-8 md:p-12 border-2 border-primary/20 hover:border-primary/50 relative overflow-hidden group transition-all duration-500"
+            tabIndex={0} className="bg-white rounded-3xl shadow-[0_0_40px_rgba(255,200,1,0.15)] p-8 md:p-12 border-2 border-primary/20 hover:border-primary/50 active:border-primary/50 focus:border-primary/50 relative overflow-hidden group transition-all duration-500"
           >
-            <div className="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-bl-full -z-10 group-hover:scale-[2.5] transition-transform duration-700 ease-in-out" />
+            <div tabIndex={0} className="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-bl-full -z-10 group-hover:scale-[2 group-active:scale-[2 group-focus:scale-[2.5] transition-transform duration-700 ease-in-out" />
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div>
@@ -113,7 +113,7 @@ export default function ContactPage() {
               <button 
                 type="submit"
                 disabled={status === 'loading'}
-                className="bg-primary text-gray-900 font-bold uppercase tracking-wider px-10 py-4 rounded-xl hover:bg-gray-900 hover:text-primary hover:-translate-y-1 transition-all duration-300 flex items-center gap-3 shadow-lg hover:shadow-xl disabled:opacity-70 disabled:hover:translate-y-0 disabled:cursor-not-allowed"
+                className="bg-primary text-gray-900 font-bold uppercase tracking-wider px-10 py-4 rounded-xl hover:bg-gray-900 active:bg-gray-900 focus:bg-gray-900 hover:text-primary active:text-primary focus:text-primary hover:-translate-y-1 active:-translate-y-1 focus:-translate-y-1 transition-all duration-300 flex items-center gap-3 shadow-lg hover:shadow-xl active:shadow-xl focus:shadow-xl disabled:opacity-70 disabled:hover:translate-y-0 active:translate-y-0 focus:translate-y-0 disabled:cursor-not-allowed"
               >
                 {status === 'loading' ? (
                   <>

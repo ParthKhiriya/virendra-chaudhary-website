@@ -173,13 +173,13 @@ export default function Education() {
         {/* Navigation Controls */}
         <button 
           onClick={handlePrev}
-          className="absolute left-4 md:left-12 top-1/2 -translate-y-1/2 w-10 h-10 md:w-14 md:h-14 bg-black/30 hover:bg-white hover:text-black text-white backdrop-blur-md rounded-full flex items-center justify-center transition-all z-20 shadow-lg border border-white/10"
+          className="absolute left-4 md:left-12 top-1/2 -translate-y-1/2 w-10 h-10 md:w-14 md:h-14 bg-black/30 hover:bg-white active:bg-white focus:bg-white hover:text-black active:text-black focus:text-black text-white backdrop-blur-md rounded-full flex items-center justify-center transition-all z-20 shadow-lg border border-white/10"
         >
           <ChevronLeft className="w-6 h-6 md:w-8 md:h-8" />
         </button>
         <button 
           onClick={handleNext}
-          className="absolute right-4 md:right-12 top-1/2 -translate-y-1/2 w-10 h-10 md:w-14 md:h-14 bg-black/30 hover:bg-white hover:text-black text-white backdrop-blur-md rounded-full flex items-center justify-center transition-all z-20 shadow-lg border border-white/10"
+          className="absolute right-4 md:right-12 top-1/2 -translate-y-1/2 w-10 h-10 md:w-14 md:h-14 bg-black/30 hover:bg-white active:bg-white focus:bg-white hover:text-black active:text-black focus:text-black text-white backdrop-blur-md rounded-full flex items-center justify-center transition-all z-20 shadow-lg border border-white/10"
         >
           <ChevronRight className="w-6 h-6 md:w-8 md:h-8" />
         </button>
@@ -193,7 +193,7 @@ export default function Education() {
                 setDirection(i > currentIndex ? 1 : -1);
                 setCurrentIndex(i);
               }}
-              className={`transition-all duration-300 rounded-full ${i === currentIndex ? 'w-6 h-2 bg-white' : 'w-2 h-2 bg-white/40 hover:bg-white/70'}`}
+              className={`transition-all duration-300 rounded-full ${i === currentIndex ? 'w-6 h-2 bg-white' : 'w-2 h-2 bg-white/40 hover:bg-white/70 active:bg-white/70 focus:bg-white/70'}`}
             />
           ))}
         </div>

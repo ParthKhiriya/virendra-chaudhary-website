@@ -70,12 +70,12 @@ export default function Contact() {
             <div className="flex flex-col gap-8">
               {/* Call Us */}
               <div tabIndex={0} className="group flex items-start gap-6">
-                <div tabIndex={0} className="w-14 h-14 shrink-0 rounded-2xl bg-gray-50 border border-gray-100 flex items-center justify-center group-hover:bg-primary group-active:bg-primary group-focus:bg-primary group-hover:border-primary group-active:border-primary group-focus:border-primary transition-colors duration-300 shadow-sm">
+                <div tabIndex={0} className="w-14 h-14 shrink-0 rounded-2xl bg-gray-50 border border-gray-100 flex items-center justify-center group-hover:bg-primary group-hover:border-primary transition-colors duration-300 shadow-sm">
                   <Phone className="w-6 h-6 text-gray-900" />
                 </div>
                 <div>
                   <p className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-1">{t('contact.call')}</p>
-                  <a href="tel:+917412994434" className="text-xl md:text-2xl font-semibold text-gray-900 hover:text-primary active:text-primary focus:text-primary transition-colors">
+                  <a href="tel:+917412994434" className="text-xl md:text-2xl font-semibold text-gray-900 hover:text-primary transition-colors">
                     +91 7412994434
                   </a>
                 </div>
@@ -83,7 +83,7 @@ export default function Contact() {
 
               {/* Location */}
               <div tabIndex={0} className="group flex items-start gap-6">
-                <div tabIndex={0} className="w-14 h-14 shrink-0 rounded-2xl bg-gray-50 border border-gray-100 flex items-center justify-center group-hover:bg-primary group-active:bg-primary group-focus:bg-primary group-hover:border-primary group-active:border-primary group-focus:border-primary transition-colors duration-300 shadow-sm">
+                <div tabIndex={0} className="w-14 h-14 shrink-0 rounded-2xl bg-gray-50 border border-gray-100 flex items-center justify-center group-hover:bg-primary group-hover:border-primary transition-colors duration-300 shadow-sm">
                   <MapPin className="w-6 h-6 text-gray-900" />
                 </div>
                 <div>
@@ -96,7 +96,7 @@ export default function Contact() {
 
               {/* Social / Connect */}
               <div tabIndex={0} className="group flex items-start gap-6">
-                <div tabIndex={0} className="w-14 h-14 shrink-0 rounded-2xl bg-gray-50 border border-gray-100 flex items-center justify-center group-hover:bg-primary group-active:bg-primary group-focus:bg-primary group-hover:border-primary group-active:border-primary group-focus:border-primary transition-colors duration-300 shadow-sm">
+                <div tabIndex={0} className="w-14 h-14 shrink-0 rounded-2xl bg-gray-50 border border-gray-100 flex items-center justify-center group-hover:bg-primary group-hover:border-primary transition-colors duration-300 shadow-sm">
                   <AtSign className="w-6 h-6 text-gray-900" />
                 </div>
                 <div>
@@ -105,7 +105,7 @@ export default function Contact() {
                     href="https://www.instagram.com/virenderchoudharyrj21" 
                     target="_blank" 
                     rel="noreferrer"
-                    className="text-lg font-semibold text-gray-900 hover:text-primary active:text-primary focus:text-primary transition-colors"
+                    className="text-lg font-semibold text-gray-900 hover:text-primary transition-colors"
                   >
                     @virenderchoudharyrj21
                   </a>
@@ -116,7 +116,7 @@ export default function Contact() {
 
           {/* Right Column: Map Embed */}
           <div ref={rightRef} className="w-full lg:w-1/2">
-            <div className="relative w-full aspect-square md:aspect-video lg:aspect-[4/3] bg-gray-100 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl active:shadow-2xl focus:shadow-2xl hover:-translate-y-2 active:-translate-y-2 focus:-translate-y-2 transition-all duration-500 border border-gray-100">
+            <div className="relative w-full aspect-square md:aspect-video lg:aspect-[4/3] bg-gray-100 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border border-gray-100">
               <iframe 
                 src="https://maps.google.com/maps?t=m&output=embed&iwloc=near&z=12&q=First+India+News+%28+%E0%A4%AB%E0%A4%BC%E0%A4%B0%E0%A5%8D%E0%A4%B8%E0%A5%8D%E0%A4%9F+%E0%A4%87%E0%A4%82%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE+%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A5%82%E0%A4%9C%E0%A4%BC+%29%2C+No.+9%2C+S.B+Tower+Ground+Floor%2C+Sahakar+Marg%2C+Jyothi+Nagar%2C+Lalkothi%2C+Jaipur%2C+Rajasthan+302001"
                 width="100%" 

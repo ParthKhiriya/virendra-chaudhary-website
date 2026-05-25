@@ -182,8 +182,8 @@ export default function News() {
 
                   {/* Read More Overlay on Hover for Center Slide */}
                   {isCenter && (
-                    <div tabIndex={0} className="absolute inset-0 bg-black/40 opacity-0 invisible group-hover:opacity-100 group-active:opacity-100 group-focus:opacity-100 group-hover:visible group-active:visible group-focus:visible transition-all duration-300 z-30 flex items-center justify-center pointer-events-none">
-                      <div tabIndex={0} className="bg-primary/90 text-black px-6 py-3 rounded-full font-bold flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 group-active:translate-y-0 group-focus:translate-y-0 transition-transform duration-300">
+                    <div tabIndex={0} className="absolute inset-0 bg-black/40 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-30 flex items-center justify-center pointer-events-none">
+                      <div tabIndex={0} className="bg-primary/90 text-black px-6 py-3 rounded-full font-bold flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                         <Maximize2 className="w-5 h-5" />
                         <span>Read Full News</span>
                       </div>
@@ -198,13 +198,13 @@ export default function News() {
           {/* Navigation Controls */}
           <button 
             onClick={handlePrev}
-            className="absolute left-2 md:left-8 lg:left-24 xl:left-48 top-1/2 -translate-y-1/2 w-10 h-10 md:w-14 md:h-14 bg-white/10 hover:bg-white active:bg-white focus:bg-white text-white hover:text-black active:text-black focus:text-black backdrop-blur-md rounded-full flex items-center justify-center transition-all z-30 shadow-xl border border-white/20 hover:scale-105 active:scale-105 focus:scale-105"
+            className="absolute left-2 md:left-8 lg:left-24 xl:left-48 top-1/2 -translate-y-1/2 w-10 h-10 md:w-14 md:h-14 bg-white/10 hover:bg-white text-white hover:text-black backdrop-blur-md rounded-full flex items-center justify-center transition-all z-30 shadow-xl border border-white/20 hover:scale-105"
           >
             <ChevronLeft className="w-6 h-6 md:w-8 md:h-8" />
           </button>
           <button 
             onClick={handleNext}
-            className="absolute right-2 md:right-8 lg:right-24 xl:right-48 top-1/2 -translate-y-1/2 w-10 h-10 md:w-14 md:h-14 bg-white/10 hover:bg-white active:bg-white focus:bg-white text-white hover:text-black active:text-black focus:text-black backdrop-blur-md rounded-full flex items-center justify-center transition-all z-30 shadow-xl border border-white/20 hover:scale-105 active:scale-105 focus:scale-105"
+            className="absolute right-2 md:right-8 lg:right-24 xl:right-48 top-1/2 -translate-y-1/2 w-10 h-10 md:w-14 md:h-14 bg-white/10 hover:bg-white text-white hover:text-black backdrop-blur-md rounded-full flex items-center justify-center transition-all z-30 shadow-xl border border-white/20 hover:scale-105"
           >
             <ChevronRight className="w-6 h-6 md:w-8 md:h-8" />
           </button>
@@ -218,7 +218,7 @@ export default function News() {
                   setDirection(i > currentIndex ? 1 : -1);
                   setCurrentIndex(i);
                 }}
-                className={`transition-all duration-300 rounded-full ${i === currentIndex ? 'w-8 h-2.5 bg-primary shadow-[0_0_10px_rgba(255,200,1,0.6)]' : 'w-2 h-2 bg-white/30 hover:bg-white/70 active:bg-white/70 focus:bg-white/70'}`}
+                className={`transition-all duration-300 rounded-full ${i === currentIndex ? 'w-8 h-2.5 bg-primary shadow-[0_0_10px_rgba(255,200,1,0.6)]' : 'w-2 h-2 bg-white/30 hover:bg-white/70'}`}
               />
             ))}
           </div>
@@ -238,7 +238,7 @@ export default function News() {
             onClick={() => setSelectedImage(null)}
           >
             <button 
-              className="absolute top-4 right-4 md:top-8 md:right-8 text-white/70 hover:text-white active:text-white focus:text-white bg-white/10 hover:bg-white/20 active:bg-white/20 focus:bg-white/20 rounded-full p-2 transition-colors z-[110]"
+              className="absolute top-4 right-4 md:top-8 md:right-8 text-white/70 hover:text-white bg-white/10 hover:bg-white/20 rounded-full p-2 transition-colors z-[110]"
               onClick={() => setSelectedImage(null)}
             >
               <X className="w-6 h-6 md:w-8 md:h-8" />

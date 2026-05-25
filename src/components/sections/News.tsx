@@ -99,10 +99,10 @@ export default function News() {
             {videos.map((video, idx) => (
               <div 
                 key={idx}
-                tabIndex={0} className="group relative flex flex-col bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl active:shadow-2xl focus:shadow-2xl hover:-translate-y-3 active:-translate-y-3 focus:-translate-y-3 transition-all duration-500 w-[85vw] shrink-0 snap-center md:w-auto md:snap-align-none border border-gray-100/50"
+                tabIndex={0} className="group relative flex flex-col bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 w-[85vw] shrink-0 snap-center md:w-auto md:snap-align-none border border-gray-100/50"
               >
                 {/* Accent Glow on Hover */}
-                <div tabIndex={0} className="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 group-active:bg-primary/5 group-focus:bg-primary/5 transition-colors duration-500 z-0 pointer-events-none" />
+                <div tabIndex={0} className="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors duration-500 z-0 pointer-events-none" />
                 
                 {/* 9:16 Aspect Ratio Container for Shorts */}
                 <div className="relative w-full pt-[177.77%] bg-black/5 z-10 overflow-hidden">
@@ -119,7 +119,7 @@ export default function News() {
                 </div>
 
                 {/* Decorative Bottom Line */}
-                <div tabIndex={0} className="absolute bottom-0 left-0 w-full h-1.5 bg-gradient-to-r from-transparent via-primary to-transparent opacity-50 group-hover:opacity-100 group-active:opacity-100 group-focus:opacity-100 transition-opacity duration-500 z-20" />
+                <div tabIndex={0} className="absolute bottom-0 left-0 w-full h-1.5 bg-gradient-to-r from-transparent via-primary to-transparent opacity-50 group-hover:opacity-100 transition-opacity duration-500 z-20" />
               </div>
             ))}
           </div>

@@ -40,7 +40,7 @@ const ImageSlider = ({ images, title }: { images: string[], title: string }) => 
                   key={dotIdx}
                   onClick={() => setCurrentIndex(dotIdx)}
                   className={`h-2 rounded-full transition-all duration-500 backdrop-blur-md ${
-                    dotIdx === currentIndex ? 'w-6 bg-primary' : 'w-2 bg-white/60 hover:bg-white active:bg-white focus:bg-white'
+                    dotIdx === currentIndex ? 'w-6 bg-primary' : 'w-2 bg-white/60 hover:bg-white'
                   }`}
                   aria-label={`Go to slide ${dotIdx + 1}`}
                 />
@@ -117,7 +117,7 @@ export default function Foundation() {
               
               {/* Image Carousel Column */}
               <div tabIndex={0} className="w-full md:flex-1 relative group">
-                <div tabIndex={0} className="absolute inset-0 bg-primary/20 blur-3xl -z-10 rounded-full opacity-0 group-hover:opacity-100 group-active:opacity-100 group-focus:opacity-100 transition-opacity duration-700" />
+                <div tabIndex={0} className="absolute inset-0 bg-primary/20 blur-3xl -z-10 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                 <ImageSlider images={item.images || []} title={item.title} />
               </div>
 

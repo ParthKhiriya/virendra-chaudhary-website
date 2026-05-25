@@ -8,6 +8,11 @@
   --font-sans: "Outfit", system-ui, sans-serif;
 }
 
+/* Override default Tailwind v4 hover variants to remove the @media (hover: hover) query.
+   This perfectly restores the native sticky hover behavior on touch devices! */
+@custom-variant hover (&:hover);
+@custom-variant group-hover (.group:hover &);
+
 @layer base {
   body {
     @apply bg-[#FAFAFA] text-[#1A1A1A] font-sans overflow-x-hidden antialiased;

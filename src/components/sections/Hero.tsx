@@ -71,12 +71,12 @@ export default function Hero() {
     return images.map((src, i) => (
       <div 
         key={i} 
-        className={`shrink-0 rounded-2xl overflow-hidden opacity-90 hover:opacity-100 active:opacity-100 focus:opacity-100 hover:scale-[1 active:scale-[1 focus:scale-[1.05] hover:-translate-y-2 active:-translate-y-2 focus:-translate-y-2 hover:shadow-2xl active:shadow-2xl focus:shadow-2xl hover:shadow-[ active:shadow-[ focus:shadow-[#FFC801]/20 hover:z-10 active:z-10 focus:z-10 transition-all duration-500 cursor-pointer relative
+        className={`shrink-0 rounded-2xl overflow-hidden opacity-90 hover:opacity-100 hover:scale-[1.05] hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#FFC801]/20 hover:z-10 transition-all duration-500 cursor-pointer relative
           ${isBento && i % 3 === 0 ? 'w-[400px] h-[300px]' : 'w-[250px] h-[300px]'}
           ${isBento && i % 4 === 0 ? 'w-[300px] h-[300px]' : ''}
         `}
       >
-        <img src={src} alt="Gallery item" className="w-full h-full object-cover transition-transform duration-700 hover:scale-110 active:scale-110 focus:scale-110" />
+        <img src={src} alt="Gallery item" className="w-full h-full object-cover transition-transform duration-700 hover:scale-110" />
       </div>
     ));
   };

@@ -50,7 +50,7 @@ export default function Header() {
                 className={`text-base lg:text-lg font-bold px-4 lg:px-6 py-2.5 rounded-full transition-all duration-300 ${
                   active 
                     ? 'bg-primary text-black shadow-md' 
-                    : 'text-gray-700 hover:bg-primary/20 active:bg-primary/20 focus:bg-primary/20 hover:text-black active:text-black focus:text-black'
+                    : 'text-gray-700 hover:bg-primary/20 hover:text-black'
                 }`}
               >
                 {link.label}
@@ -86,7 +86,7 @@ export default function Header() {
                 key={link.key}
                 to={link.to} 
                 className={`text-3xl font-black uppercase transition-colors duration-300 transform ${
-                  active ? 'text-primary' : 'text-gray-900 hover:text-primary active:text-primary focus:text-primary'
+                  active ? 'text-primary' : 'text-gray-900 hover:text-primary'
                 } ${
                   isMobileMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
                 }`}

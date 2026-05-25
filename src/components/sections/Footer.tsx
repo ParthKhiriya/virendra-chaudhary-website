@@ -31,11 +31,11 @@ export default function Footer() {
             <img 
               src="https://virendra.achtunglabs.co/wp-content/uploads/2018/05/2.png" 
               alt="Virendra Chaudhary" 
-              className="w-32 md:w-40 h-32 md:h-40 object-cover rounded-full border-2 border-gray-800 shadow-xl mb-6 hover:border-primary active:border-primary focus:border-primary transition-colors duration-300"
+              className="w-32 md:w-40 h-32 md:h-40 object-cover rounded-full border-2 border-gray-800 shadow-xl mb-6 hover:border-primary transition-colors duration-300"
             />
             <h3 
               onClick={scrollToTop}
-              className={`text-2xl md:text-3xl font-black text-white uppercase tracking-tighter cursor-pointer hover:text-primary active:text-primary focus:text-primary transition-colors duration-300 inline-block mb-4 ${i18n.language === 'hi' ? 'tracking-[0.05em]' : 'tracking-tighter'}`}
+              className={`text-2xl md:text-3xl font-black text-white uppercase tracking-tighter cursor-pointer hover:text-primary transition-colors duration-300 inline-block mb-4 ${i18n.language === 'hi' ? 'tracking-[0.05em]' : 'tracking-tighter'}`}
             >
               {i18n.language === 'hi' ? 'वीरेंद्र चौधरी' : 'Virendra Chaudhary'}
             </h3>
@@ -55,7 +55,7 @@ export default function Footer() {
                 <li key={link.key}>
                   <Link 
                     to={link.to}
-                    className="text-gray-400 hover:text-primary active:text-primary focus:text-primary hover:translate-x-1 active:translate-x-1 focus:translate-x-1 inline-block transition-all duration-300"
+                    className="text-gray-400 hover:text-primary hover:translate-x-1 inline-block transition-all duration-300"
                   >
                     {t(`nav.${link.key}`)}
                   </Link>
@@ -71,24 +71,24 @@ export default function Footer() {
             </h4>
             <ul className="flex flex-col gap-4">
               <li tabIndex={0} className="flex items-start gap-3 group">
-                <MapPin tabIndex={0} className="w-5 h-5 shrink-0 text-gray-500 group-hover:text-primary group-active:text-primary group-focus:text-primary transition-colors mt-0.5" />
+                <MapPin tabIndex={0} className="w-5 h-5 shrink-0 text-gray-500 group-hover:text-primary transition-colors mt-0.5" />
                 <span className="text-sm text-gray-400 leading-relaxed">
                   {t('footer.address')}
                 </span>
               </li>
               <li tabIndex={0} className="flex items-center gap-3 group">
-                <Phone tabIndex={0} className="w-5 h-5 shrink-0 text-gray-500 group-hover:text-primary group-active:text-primary group-focus:text-primary transition-colors" />
-                <a href="tel:+917412994434" className="text-sm text-gray-400 hover:text-white active:text-white focus:text-white transition-colors">
+                <Phone tabIndex={0} className="w-5 h-5 shrink-0 text-gray-500 group-hover:text-primary transition-colors" />
+                <a href="tel:+917412994434" className="text-sm text-gray-400 hover:text-white transition-colors">
                   +91 7412994434
                 </a>
               </li>
               <li tabIndex={0} className="flex items-center gap-3 group">
-                <AtSign tabIndex={0} className="w-5 h-5 shrink-0 text-gray-500 group-hover:text-primary group-active:text-primary group-focus:text-primary transition-colors" />
+                <AtSign tabIndex={0} className="w-5 h-5 shrink-0 text-gray-500 group-hover:text-primary transition-colors" />
                 <a 
                   href="https://www.instagram.com/virenderchoudharyrj21" 
                   target="_blank" 
                   rel="noreferrer"
-                  className="text-sm text-gray-400 hover:text-white active:text-white focus:text-white transition-colors"
+                  className="text-sm text-gray-400 hover:text-white transition-colors"
                 >
                   @virenderchoudharyrj21
                 </a>

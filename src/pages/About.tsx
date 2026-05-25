@@ -98,9 +98,9 @@ export default function AboutPage() {
                   whileInView={{ scale: 1, opacity: 1 }}
                   viewport={{ once: true, margin: "-20%" }}
                   transition={{ duration: 0.5, delay: 0.2, type: "spring", stiffness: 200 }}
-                  tabIndex={0} className="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-gray-800 group-hover:bg-primary group-active:bg-primary group-focus:bg-primary transition-colors duration-500 border-4 border-[#FAFAFA] flex items-center justify-center z-20 shadow-lg"
+                  tabIndex={0} className="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-gray-800 group-hover:bg-primary transition-colors duration-500 border-4 border-[#FAFAFA] flex items-center justify-center z-20 shadow-lg"
                 >
-                  <div tabIndex={0} className="group-hover:scale-110 group-active:scale-110 group-focus:scale-110 group-hover:rotate-12 group-active:rotate-12 group-focus:rotate-12 transition-transform duration-300">
+                  <div tabIndex={0} className="group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300">
                     {getIcon(index)}
                   </div>
                 </motion.div>
@@ -113,20 +113,20 @@ export default function AboutPage() {
                   transition={{ duration: 0.7, ease: "easeOut" }}
                   className={`w-full md:w-[45%] pl-20 md:pl-0 ${isEven ? 'md:pr-12 md:text-right' : 'md:pl-12 md:ml-auto md:text-left'}`}
                 >
-                  <div tabIndex={0} className="bg-white p-6 md:p-8 rounded-3xl border border-gray-100 shadow-xl shadow-gray-200/50 group-hover:shadow-primary/20 group-active:shadow-primary/20 group-focus:shadow-primary/20 group-hover:border-primary/30 group-active:border-primary/30 group-focus:border-primary/30 group-hover:-translate-y-2 group-active:-translate-y-2 group-focus:-translate-y-2 group-hover:scale-[1 group-active:scale-[1 group-focus:scale-[1.02] transition-all duration-500 relative overflow-hidden">
+                  <div tabIndex={0} className="bg-white p-6 md:p-8 rounded-3xl border border-gray-100 shadow-xl shadow-gray-200/50 group-hover:shadow-primary/20 group-hover:border-primary/30 group-hover:-translate-y-2 group-hover:scale-[1.02] transition-all duration-500 relative overflow-hidden">
                     
-                    <div tabIndex={0} className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 group-active:opacity-100 group-focus:opacity-100 transition-opacity duration-500 pointer-events-none" />
+                    <div tabIndex={0} className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
                     <div className={`flex items-center gap-2 mb-3 text-primary font-bold tracking-widest text-sm uppercase ${isEven ? 'md:justify-end' : 'md:justify-start'}`}>
                       <Calendar size={16} />
                       {item.year}
                     </div>
                     
-                    <h3 tabIndex={0} className="text-2xl md:text-3xl font-black text-gray-900 mb-2 leading-tight group-hover:text-primary group-active:text-primary group-focus:text-primary transition-colors duration-300">
+                    <h3 tabIndex={0} className="text-2xl md:text-3xl font-black text-gray-900 mb-2 leading-tight group-hover:text-primary transition-colors duration-300">
                       {item.title}
                     </h3>
                     
-                    <h4 tabIndex={0} className="text-lg font-bold text-gray-700 mb-4 pb-4 border-b border-gray-100 group-hover:border-primary/20 group-active:border-primary/20 group-focus:border-primary/20 transition-colors duration-300">
+                    <h4 tabIndex={0} className="text-lg font-bold text-gray-700 mb-4 pb-4 border-b border-gray-100 group-hover:border-primary/20 transition-colors duration-300">
                       {item.org}
                     </h4>
                     
@@ -209,13 +209,13 @@ export default function AboutPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                tabIndex={0} className="bg-white flex flex-col items-center justify-center p-8 md:p-10 rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl active:shadow-xl focus:shadow-xl hover:shadow-primary/10 active:shadow-primary/10 focus:shadow-primary/10 hover:-translate-y-2 active:-translate-y-2 focus:-translate-y-2 hover:border-primary/30 active:border-primary/30 focus:border-primary/30 transition-all duration-300 relative group"
+                tabIndex={0} className="bg-white flex flex-col items-center justify-center p-8 md:p-10 rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 hover:border-primary/30 transition-all duration-300 relative group"
               >
-                <div tabIndex={0} className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent opacity-0 group-hover:opacity-100 group-active:opacity-100 group-focus:opacity-100 transition-opacity duration-300 pointer-events-none rounded-3xl" />
+                <div tabIndex={0} className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-3xl" />
                 <span className="text-base font-bold text-primary tracking-widest uppercase mb-4 block">
                   {award.year}
                 </span>
-                <h4 tabIndex={0} className="text-2xl font-black text-gray-900 leading-snug group-hover:text-primary group-active:text-primary group-focus:text-primary transition-colors duration-300 z-10">
+                <h4 tabIndex={0} className="text-2xl font-black text-gray-900 leading-snug group-hover:text-primary transition-colors duration-300 z-10">
                   {award.title}
                 </h4>
               </motion.div>
@@ -254,9 +254,9 @@ export default function AboutPage() {
                       whileInView={{ opacity: 1 }}
                       viewport={{ once: true }}
                       transition={{ delay: idx * 0.05 }}
-                      tabIndex={0} className="hover:bg-primary/5 active:bg-primary/5 focus:bg-primary/5 transition-colors group"
+                      tabIndex={0} className="hover:bg-primary/5 transition-colors group"
                     >
-                      <td tabIndex={0} className="py-3 px-3 md:py-4 md:px-6 text-xs md:text-base font-bold text-gray-800 align-top group-hover:text-primary group-active:text-primary group-focus:text-primary transition-colors">
+                      <td tabIndex={0} className="py-3 px-3 md:py-4 md:px-6 text-xs md:text-base font-bold text-gray-800 align-top group-hover:text-primary transition-colors">
                         {aff.role}
                       </td>
                       <td className="py-3 px-3 md:py-4 md:px-6 text-xs md:text-base font-bold text-gray-900 align-top">

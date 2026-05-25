@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -133,9 +134,9 @@ export default function About() {
           {pointers.map((pointer, idx) => {
             const Icon = pointerIcons[idx];
             return (
-              <a 
+              <Link 
                 key={idx}
-                href="#services"
+                to="/life-journey"
                 tabIndex={0} className="group relative p-5 md:p-8 rounded-2xl md:rounded-3xl bg-gray-50 border border-gray-200 hover:border-primary/50 transition-all duration-500 hover:-translate-y-2 hover:bg-white hover:shadow-lg overflow-hidden cursor-pointer flex flex-row items-center md:items-start md:flex-col gap-4 md:gap-0"
               >
                 {/* Hover Glow Effect */}
@@ -159,7 +160,7 @@ export default function About() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
                 </div>
-              </a>
+              </Link>
             );
           })}
         </div>

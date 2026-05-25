@@ -190,6 +190,32 @@
     },
     "galleryPage": {
       "title": "Gallery"
+    },
+    "lifeJourney": {
+      "pageTitle": "Life Journey",
+      "pageSubtitle": "Mr. Virendra Chaudhary",
+      "sections": [
+        {
+          "title": "Early Life & Education",
+          "desc": "Mr. Virendra Chaudhary was born on May 1, 1969, in Rajasthan. He received his early education at Bikaner Boys School, Bikaner, where his inclination towards discipline, leadership, and social concerns developed. For higher education, he completed his graduation in Electronics Engineering (B.E.) from Amravati University, Maharashtra. To develop his technical vision on a global scale, he went to Australia, where he earned an M.Tech degree in Information Technology and Telecommunications from the University of South Australia. This international academic experience laid the foundation for his entire professional life."
+        },
+        {
+          "title": "Academic & Early Professional Life",
+          "desc": "He began his career in the education sector as a lecturer at Maharaja Surajmal Institute of Technology, New Delhi. Following this, he worked as a consultant in the telecommunications sector with Saturn Telecommunications Limited, New Delhi. During this period, he gained a deep understanding of technical knowledge, management skills, and institutional work culture."
+        },
+        {
+          "title": "Industry & Entrepreneurship",
+          "desc": "In 1998, he founded Nagaur Automobiles Pvt. Ltd. and started a dealership for Mahindra vehicles. Since 2000, he has been active as an authorized dealer for Tata Passenger Cars through Marwar Motors Pvt. Ltd., Bikaner. Due to his excellent customer service, institutional discipline, and quality-centric approach, he was awarded the Best Customer Service Award by Tata Motors in 2002–03 and 2005–06, which he received personally from Mr. Ratan Tata. In the industry, his identity was forged not just as a businessman, but as a reliable and value-based entrepreneur."
+        },
+        {
+          "title": "Contribution to Education",
+          "desc": "Believing education to be the most powerful medium for social change, Mr. Chaudhary actively contributed to the establishment and management of educational institutions. He is associated with the management of Baldev Ram Mirdha Institute of Technology (BMIT), Jaipur, and BMIT East Campus. Additionally, he plays a key role in the operation of Maharani Kishori Devi Girls School, Bikaner, which specifically provides quality and safe education to rural girls. He firmly believes that girls' education is not just a social responsibility, but the cornerstone of nation-building."
+        },
+        {
+          "title": "Social & Public Leadership",
+          "desc": "Mr. Virendra Chaudhary has played leadership roles in numerous social, industrial, and sports organizations. He served as the President of the Federation of Rajasthan Trade and Industry (FORTI), Bikaner, where he strengthened the dialogue between industry and government. As the President of Marubhumi Seva Avam Anusandhan Sansthan, he worked towards RTI, rural development, and environmental conservation. Alongside this, he served as the Vice President of the Rajasthan Rifle Association and President of the Nagaur Rifle Shooting Association, aiming to guide the youth in a positive direction through sports."
+        }
+      ]
     }
   }
 }

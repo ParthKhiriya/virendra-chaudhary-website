@@ -10,7 +10,23 @@ import Gallery from './pages/Gallery';
 import NewsPage from './pages/News';
 import ContactPage from './pages/ContactPage';
 
+import { useEffect } from 'react';
+
 function App() {
+  useEffect(() => {
+    // iOS Safari does not natively focus non-input elements on tap.
+    // This forces focus on any tapped element that has a tabIndex, button, or link.
+    // Combined with our group-focus/focus variants, this makes hover effects "stick" on tap!
+    const handleTouch = (e: TouchEvent) => {
+      const target = (e.target as Element).closest('[tabIndex], a, button, .group') as HTMLElement;
+      if (target && typeof target.focus === 'function') {
+        target.focus();
+      }
+    };
+    document.addEventListener('touchstart', handleTouch, { passive: true });
+    return () => document.removeEventListener('touchstart', handleTouch);
+  }, []);
+
   return (
     <BrowserRouter>
       <LenisProvider>

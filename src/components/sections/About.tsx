@@ -142,20 +142,27 @@ export default function About() {
                 {/* Hover Glow Effect */}
                 <div tabIndex={0} className="absolute top-0 right-0 w-32 h-32 bg-primary/20 blur-[50px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
                 
-                <div tabIndex={0} className="w-12 h-12 md:w-14 md:h-14 shrink-0 rounded-xl md:rounded-2xl bg-white border border-gray-100 shadow-sm flex items-center justify-center md:mb-6 group-hover:scale-110 transition-transform duration-500 group-hover:border-primary/30">
-                  <Icon tabIndex={0} className="w-5 h-5 md:w-6 md:h-6 text-gray-900 group-hover:text-primary transition-colors duration-500" />
+                {/* Card Content Wrapper: Row on mobile, Col on desktop */}
+                <div className="flex flex-row md:flex-col items-start gap-4 md:gap-0 w-full relative z-10">
+                  {/* Icon Container */}
+                  <div tabIndex={0} className="w-12 h-12 md:w-14 md:h-14 shrink-0 rounded-xl md:rounded-2xl bg-white border border-gray-100 shadow-sm flex items-center justify-center md:mb-6 group-hover:scale-110 transition-transform duration-500 group-hover:border-primary/30">
+                    <Icon tabIndex={0} className="w-5 h-5 md:w-6 md:h-6 text-gray-900 group-hover:text-primary transition-colors duration-500" />
+                  </div>
+                  
+                  {/* Text Container */}
+                  <div className="flex flex-col flex-1">
+                    <h3 tabIndex={0} className="text-lg md:text-2xl font-bold text-gray-900 mb-1 md:mb-4 tracking-wide group-hover:text-primary transition-colors duration-500">
+                      {pointer.title}
+                    </h3>
+                    
+                    <p className="text-sm md:text-base text-gray-600 font-medium leading-relaxed">
+                      {pointer.desc}
+                    </p>
+                  </div>
                 </div>
-                
-                <h3 tabIndex={0} className="text-lg md:text-2xl font-bold text-gray-900 md:mb-4 tracking-wide group-hover:text-primary transition-colors duration-500 flex-1">
-                  {pointer.title}
-                </h3>
-                
-                <p className="text-sm md:text-base text-gray-600 font-medium leading-relaxed mt-2 md:mt-0">
-                  {pointer.desc}
-                </p>
-                
+
                 {/* Minimalist Arrow */}
-                <div tabIndex={0} className="absolute bottom-5 right-5 md:bottom-8 md:right-8 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500">
+                <div tabIndex={0} className="absolute bottom-5 right-5 md:bottom-8 md:right-8 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 z-10">
                   <svg className="w-5 h-5 md:w-6 md:h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>

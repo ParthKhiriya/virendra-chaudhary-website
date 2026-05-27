@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Phone, MapPin, AtSign } from 'lucide-react';
+import { Phone, MapPin } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -91,24 +91,6 @@ export default function Contact() {
                   <p className="text-lg text-gray-600 leading-relaxed max-w-sm">
                     First India News, No. 9, S.B Tower Ground Floor, Sahakar Marg, Jyothi Nagar, Lalkothi, Jaipur, Rajasthan 302001
                   </p>
-                </div>
-              </div>
-
-              {/* Social / Connect */}
-              <div tabIndex={0} className="group flex items-start gap-6">
-                <div tabIndex={0} className="w-14 h-14 shrink-0 rounded-2xl bg-gray-50 border border-gray-100 flex items-center justify-center group-hover:bg-primary group-hover:border-primary transition-colors duration-300 shadow-sm">
-                  <AtSign className="w-6 h-6 text-gray-900" />
-                </div>
-                <div>
-                  <p className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-1">{t('contact.message')}</p>
-                  <a 
-                    href="https://www.instagram.com/virenderchoudharyrj21" 
-                    target="_blank" 
-                    rel="noreferrer"
-                    className="text-lg font-semibold text-gray-900 hover:text-primary transition-colors"
-                  >
-                    @virenderchoudharyrj21
-                  </a>
                 </div>
               </div>
             </div>

@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LenisProvider from './components/layout/LenisProvider';
 import CustomCursor from './components/layout/CustomCursor';
+import ScrollManager from './components/layout/ScrollManager';
 import Header from './components/layout/Header';
 import Footer from './components/sections/Footer';
 import Home from './pages/Home';
@@ -14,6 +15,7 @@ import LifeJourney from './pages/LifeJourney';
 function App() {
   return (
     <BrowserRouter>
+      <ScrollManager />
       <LenisProvider>
         <div className="min-h-screen bg-[#FAFAFA] text-gray-900 relative">
           <div className="noise-overlay" />

@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
-import { AtSign, MapPin, Phone } from 'lucide-react';
+import { MapPin, Phone, Mail } from 'lucide-react';
+import { Instagram, Facebook, Twitter } from '../icons/SocialIcons';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
@@ -82,15 +83,40 @@ export default function Footer() {
                   +91 7412994434
                 </a>
               </li>
-              <li tabIndex={0} className="flex items-center gap-3 group">
-                <AtSign tabIndex={0} className="w-5 h-5 shrink-0 text-gray-500 group-hover:text-primary transition-colors" />
+              <li className="pt-4 flex items-center gap-4">
                 <a 
-                  href="https://www.instagram.com/virenderchoudharyrj21" 
+                  href="https://www.instagram.com/virenderchoudharyrj21?igsh=MWVjZThvYTFwdWp1aw==" 
                   target="_blank" 
                   rel="noreferrer"
-                  className="text-sm text-gray-400 hover:text-white transition-colors"
+                  className="w-10 h-10 rounded-full bg-gray-900 border border-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-gray-900 hover:border-primary transition-all duration-300"
+                  aria-label="Instagram"
                 >
-                  @virenderchoudharyrj21
+                  <Instagram className="w-4 h-4" />
+                </a>
+                <a 
+                  href="https://www.facebook.com/share/18RXy3ZZ4A/?mibextid=wwXIfr" 
+                  target="_blank" 
+                  rel="noreferrer"
+                  className="w-10 h-10 rounded-full bg-gray-900 border border-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-gray-900 hover:border-primary transition-all duration-300"
+                  aria-label="Facebook"
+                >
+                  <Facebook className="w-4 h-4" />
+                </a>
+                <a 
+                  href="https://x.com/virender_rj21?s=21" 
+                  target="_blank" 
+                  rel="noreferrer"
+                  className="w-10 h-10 rounded-full bg-gray-900 border border-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-gray-900 hover:border-primary transition-all duration-300"
+                  aria-label="Twitter (X)"
+                >
+                  <Twitter className="w-4 h-4" />
+                </a>
+                <a 
+                  href="mailto:parthkhiriya2005@gmail.com" 
+                  className="w-10 h-10 rounded-full bg-gray-900 border border-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-gray-900 hover:border-primary transition-all duration-300"
+                  aria-label="Email"
+                >
+                  <Mail className="w-4 h-4" />
                 </a>
               </li>
             </ul>

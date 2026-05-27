@@ -1,41 +1,45 @@
-import { useState } from 'react';
-import type { FormEvent } from 'react';
 import { useTranslation } from 'react-i18next';
 import ContactSection from '../components/sections/Contact';
-import { Send, Loader2, CheckCircle2, AlertCircle } from 'lucide-react';
-import emailjs from '@emailjs/browser';
+import { Mail } from 'lucide-react';
+import { Instagram, Facebook, Twitter } from '../components/icons/SocialIcons';
 
 export default function ContactPage() {
   const { i18n } = useTranslation();
-  
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
-  const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-    setStatus('loading');
-
-    try {
-      await emailjs.send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: formData.name,
-          reply_to: formData.email,
-          message: formData.message,
-        },
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      );
-      
-      setStatus('success');
-      setFormData({ name: '', email: '', message: '' });
-      setTimeout(() => setStatus('idle'), 5000);
-    } catch (error) {
-      console.error('Failed to send email:', error);
-      setStatus('error');
-      setTimeout(() => setStatus('idle'), 5000);
+  const socials = [
+    {
+      name: 'Instagram',
+      handle: '@virenderchoudharyrj21',
+      icon: Instagram,
+      link: 'https://www.instagram.com/virenderchoudharyrj21?igsh=MWVjZThvYTFwdWp1aw==',
+      color: 'hover:text-pink-600',
+      bgHover: 'group-hover:bg-pink-50'
+    },
+    {
+      name: 'Facebook',
+      handle: 'Virendra Chaudhary',
+      icon: Facebook,
+      link: 'https://www.facebook.com/share/18RXy3ZZ4A/?mibextid=wwXIfr',
+      color: 'hover:text-blue-600',
+      bgHover: 'group-hover:bg-blue-50'
+    },
+    {
+      name: 'X (Twitter)',
+      handle: '@virender_rj21',
+      icon: Twitter,
+      link: 'https://x.com/virender_rj21?s=21',
+      color: 'hover:text-gray-900',
+      bgHover: 'group-hover:bg-gray-200'
+    },
+    {
+      name: 'Email',
+      handle: 'parthkhiriya2005@gmail.com',
+      icon: Mail,
+      link: 'mailto:parthkhiriya2005@gmail.com',
+      color: 'hover:text-red-500',
+      bgHover: 'group-hover:bg-red-50'
     }
-  };
+  ];
 
   return (
     <div className="pt-24 min-h-screen bg-[#FAFAFA] flex flex-col relative overflow-hidden">
@@ -60,89 +64,41 @@ export default function ContactPage() {
             </p>
           </div>
 
-          <form 
-            onSubmit={handleSubmit}
-            tabIndex={0} className="bg-white rounded-3xl shadow-[0_0_40px_rgba(255,200,1,0.15)] p-8 md:p-12 border-2 border-primary/20 hover:border-primary/50 relative overflow-hidden group transition-all duration-500"
-          >
-            <div tabIndex={0} className="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-bl-full -z-10 group-hover:scale-[2.5] transition-transform duration-700 ease-in-out" />
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <div>
-                <label className="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">
-                  {i18n.language === 'hi' ? 'आपका नाम' : 'Your Name'}
-                </label>
-                <input 
-                  type="text" 
-                  required
-                  value={formData.name}
-                  onChange={(e) => setFormData({...formData, name: e.target.value})}
-                  className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 outline-none transition-all font-medium"
-                  placeholder="John Doe"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">
-                  {i18n.language === 'hi' ? 'ईमेल पता' : 'Email Address'}
-                </label>
-                <input 
-                  type="email" 
-                  required
-                  value={formData.email}
-                  onChange={(e) => setFormData({...formData, email: e.target.value})}
-                  className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 outline-none transition-all font-medium"
-                  placeholder="john@example.com"
-                />
-              </div>
-            </div>
-            
-            <div className="mb-8">
-              <label className="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">
-                {i18n.language === 'hi' ? 'संदेश' : 'Message'}
-              </label>
-              <textarea 
-                rows={5}
-                required
-                value={formData.message}
-                onChange={(e) => setFormData({...formData, message: e.target.value})}
-                className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 outline-none transition-all font-medium resize-none"
-                placeholder={i18n.language === 'hi' ? 'अपना संदेश यहां लिखें...' : 'How can we help you?'}
-              ></textarea>
-            </div>
-
-            <div className="flex flex-col items-center gap-4 mt-8">
-              <button 
-                type="submit"
-                disabled={status === 'loading'}
-                className="bg-primary text-gray-900 font-bold uppercase tracking-wider px-10 py-4 rounded-xl hover:bg-gray-900 hover:text-primary hover:-translate-y-1 transition-all duration-300 flex items-center gap-3 shadow-lg hover:shadow-xl disabled:opacity-70 disabled:hover:translate-y-0 disabled:cursor-not-allowed"
-              >
-                {status === 'loading' ? (
-                  <>
-                    <span>{i18n.language === 'hi' ? 'भेज रहा है...' : 'Sending...'}</span>
-                    <Loader2 className="w-5 h-5 animate-spin" />
-                  </>
-                ) : (
-                  <>
-                    <span>{i18n.language === 'hi' ? 'संदेश भेजें' : 'Send Message'}</span>
-                    <Send className="w-5 h-5" />
-                  </>
-                )}
-              </button>
-
-              {/* Status Messages */}
-              {status === 'success' && (
-                <div className="flex items-center gap-2 text-green-600 font-bold animate-in fade-in slide-in-from-bottom-2">
-                  <CheckCircle2 className="w-5 h-5" />
-                  <span>{i18n.language === 'hi' ? 'संदेश सफलतापूर्वक भेजा गया!' : 'Message sent successfully!'}</span>
-                </div>
-              )}
-              {status === 'error' && (
-                <div className="flex items-center gap-2 text-red-500 font-bold animate-in fade-in slide-in-from-bottom-2">
-                  <AlertCircle className="w-5 h-5" />
-                  <span>{i18n.language === 'hi' ? 'संदेश भेजने में विफल। कृपया पुनः प्रयास करें।' : 'Failed to send message. Please check your keys.'}</span>
-                </div>
-              )}
-            </div>
-          </form>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10 w-full max-w-4xl mx-auto">
+            {socials.map((social, index) => {
+              const Icon = social.icon;
+              return (
+                <a 
+                  key={index}
+                  href={social.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 bg-white p-6 md:p-8 rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-gray-100 hover:border-primary/30 hover:shadow-xl transition-all duration-500 hover:-translate-y-2 overflow-hidden relative cursor-pointer"
+                >
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-bl-full -z-10 group-hover:scale-[2] transition-transform duration-700 ease-in-out opacity-0 group-hover:opacity-100" />
+                  
+                  <div className={`w-16 h-16 shrink-0 rounded-2xl bg-gray-50 border border-gray-100 flex items-center justify-center transition-colors duration-500 ${social.bgHover}`}>
+                    <Icon className={`w-7 h-7 text-gray-700 transition-colors duration-500 ${social.color}`} />
+                  </div>
+                  
+                  <div className="flex flex-col items-center md:items-start text-center md:text-left pt-1">
+                    <p className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-1">
+                      {social.name}
+                    </p>
+                    <h3 className="text-lg md:text-xl font-bold text-gray-900 group-hover:text-primary transition-colors duration-300 break-all md:break-normal">
+                      {social.handle}
+                    </h3>
+                  </div>
+                  
+                  <div className="absolute bottom-6 right-6 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 hidden md:block">
+                    <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </div>
+                </a>
+              );
+            })}
+          </div>
         </div>
       </section>
 

@@ -137,7 +137,7 @@ export default function About() {
               <Link 
                 key={idx}
                 to="/life-journey"
-                tabIndex={0} className="group relative p-5 md:p-8 rounded-2xl md:rounded-3xl bg-gray-50 border border-gray-200 hover:border-primary/50 transition-all duration-500 hover:-translate-y-2 hover:bg-white hover:shadow-lg overflow-hidden cursor-pointer flex flex-row items-center md:items-start md:flex-col gap-4 md:gap-0"
+                tabIndex={0} className="group relative p-5 md:p-8 rounded-2xl md:rounded-3xl bg-gray-50 border border-gray-200 hover:border-primary/50 transition-all duration-500 hover:-translate-y-2 hover:bg-white hover:shadow-lg overflow-hidden cursor-pointer flex flex-col items-start gap-3 md:gap-4"
               >
                 {/* Hover Glow Effect */}
                 <div tabIndex={0} className="absolute top-0 right-0 w-32 h-32 bg-primary/20 blur-[50px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
@@ -150,7 +150,7 @@ export default function About() {
                   {pointer.title}
                 </h3>
                 
-                <p className="hidden md:block text-base text-gray-600 font-medium leading-relaxed">
+                <p className="text-sm md:text-base text-gray-600 font-medium leading-relaxed mt-2 md:mt-0">
                   {pointer.desc}
                 </p>
                 

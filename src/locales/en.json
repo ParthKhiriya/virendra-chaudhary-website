@@ -42,8 +42,8 @@
         { "year": "1996–1997", "title": "Telecom Consultant", "org": "Saturn Telecommunications Ltd., New Delhi", "desc": "Telecom Consultancy" },
         { "year": "1998–Present", "title": "Mahindra Vehicle Dealer", "org": "Nagaur Automobiles Pvt. Ltd.", "desc": "Currently managed by younger brother" },
         { "year": "2000–Present", "title": "Tata Passenger Cars Dealer", "org": "Marwar Motors Pvt. Ltd., Bikaner", "desc": "Awarded Best Dealer (2002–03, 2005–06)" },
-        { "year": "2002–Present", "title": "Management", "org": "Baldevram Mirdha Institute of Technology", "desc": "Engineering Institute Management" },
-        { "year": "2006–Present", "title": "Management", "org": "BMIT East Campus", "desc": "Engineering Institute Management" },
+        { "year": "2002–Present", "title": "Management", "org": "Baldevram Mirdha Institute of Technology, Jaipur", "desc": "Engineering Institute Management" },
+        { "year": "2006–Present", "title": "Management", "org": "BMIT East Campus, Jaipur", "desc": "Engineering Institute Management" },
         { "year": "2009–Present", "title": "Management", "org": "Maharani Kishori Devi Girls School, Bikaner", "desc": "Girls' Residential School Management" }
       ],
       "socialWork": {
@@ -76,7 +76,7 @@
           { "role": "Former Vice President", "org": "Gramothan Vidyapeeth Sansthan", "loc": "Didwana, Nagaur", "desc": "Rural Girl Child Education" },
           { "role": "Former Vice President", "org": "Rajasthan Rifle Association", "loc": "Jaipur", "desc": "Affiliated with IOA & NRAI" },
           { "role": "Executive Member", "org": "Maharaja Surajmal Memorial Society", "loc": "Delhi", "desc": "Education & Social Research" },
-          { "role": "Executive Member", "org": "Chaudhary Moolaram Memorial Education Society", "loc": "Nagaur", "desc": "BMIT Institute" },
+          { "role": "Secretary", "org": "Chaudhary Moolaram Memorial Education Society", "loc": "Nagaur", "desc": "BMIT Institute" },
           { "role": "Patron", "org": "Rajasthan Youth Club", "loc": "Bikaner", "desc": "Education & Social Assistance" },
           { "role": "Former President", "org": "Nagaur Rifle Shooting Association", "loc": "Nagaur", "desc": "Shooting Sports Promotion" },
           { "role": "Former Member", "org": "Rotary Club, Lions Club, HelpAge India", "loc": "Bikaner", "desc": "Social Service" }

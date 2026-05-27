@@ -112,7 +112,7 @@ export default function LifeJourney() {
                 {/* Content Card */}
                 <div className={`w-full md:w-[45%] relative ${isEven ? 'md:text-right md:pr-12' : 'md:text-left md:pl-12'}`}>
                   {/* Decorative Number */}
-                  <div className={`absolute top-0 -z-10 text-[8rem] md:text-[10rem] font-black text-gray-100 opacity-50 select-none ${isEven ? 'right-0 md:right-8' : 'left-0 md:left-8'} -translate-y-1/2`}>
+                  <div className={`absolute top-0 -z-10 text-[8rem] md:text-[10rem] font-black text-gray-200 select-none ${isEven ? 'right-0 md:right-8' : 'left-0 md:left-8'} -translate-y-1/2`}>
                     {number}
                   </div>
 

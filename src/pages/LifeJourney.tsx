@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useGSAP } from '@gsap/react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -21,7 +22,7 @@ export default function LifeJourney() {
     window.scrollTo(0, 0);
   }, []);
 
-  useEffect(() => {
+  useGSAP(() => {
     // GSAP ScrollTrigger for alternating timeline items
     const elements = document.querySelectorAll('.timeline-item');
     elements.forEach((el, index) => {
@@ -45,11 +46,7 @@ export default function LifeJourney() {
         }
       );
     });
-
-    return () => {
-      ScrollTrigger.getAll().forEach(t => t.kill());
-    };
-  }, [sections]);
+  }, { scope: containerRef, dependencies: [sections] });
 
   return (
     <div className="min-h-screen bg-[#FAFAFA] overflow-hidden font-sans" ref={containerRef}>

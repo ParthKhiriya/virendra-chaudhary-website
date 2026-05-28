@@ -32,44 +32,44 @@ export default function About() {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: container.current,
-        start: 'top 75%',
+        start: 'top bottom', // Trigger immediately as it enters screen
         toggleActions: 'play none none reverse',
       }
     });
 
     tl.fromTo(titleRef.current, 
-      { y: 100, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1.2, ease: 'power4.out' }
+      { y: 30, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.4, ease: 'power2.out' }
     )
     .fromTo(textRef1.current, 
-      { y: 50, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1, ease: 'power3.out' }, 
-      "-=0.8"
+      { y: 20, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.3, ease: 'power2.out' }, 
+      "-=0.2"
     )
     .fromTo(textRef2.current, 
-      { y: 50, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1, ease: 'power3.out' }, 
-      "-=0.8"
+      { y: 20, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.3, ease: 'power2.out' }, 
+      "-=0.2"
     )
     .fromTo(imageRef.current,
-      { x: 50, opacity: 0 },
-      { x: 0, opacity: 1, duration: 1.2, ease: 'power3.out' },
-      "-=1.2"
+      { x: 30, opacity: 0 },
+      { x: 0, opacity: 1, duration: 0.4, ease: 'power2.out' },
+      "-=0.4"
     );
 
     // Animate the pointer cards staggering in
     if (pointersContainerRef.current) {
       gsap.fromTo(pointersContainerRef.current.children, 
-        { y: 60, opacity: 0 },
+        { y: 20, opacity: 0 },
         {
           y: 0,
           opacity: 1,
-          duration: 0.8,
-          stagger: 0.15,
-          ease: 'power3.out',
+          duration: 0.25,
+          stagger: 0.04,
+          ease: 'power1.out',
           scrollTrigger: {
             trigger: pointersContainerRef.current,
-            start: 'top 85%',
+            start: 'top bottom',
             toggleActions: 'play none none reverse',
           }
         }
@@ -88,19 +88,20 @@ export default function About() {
 
       <div className="max-w-7xl mx-auto w-full relative z-10 flex flex-col items-center text-center md:text-left md:items-start">
         
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
+        {/* Title above grid to allow exact text-image alignment */}
+        <div className="w-full flex flex-col items-center md:items-start text-center md:text-left mb-12">
+          <div className="w-24 h-1.5 bg-primary mb-8 rounded-full opacity-80" />
+          <h2 
+            ref={titleRef}
+            className={`text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-primary uppercase drop-shadow-sm ${i18n.language === 'hi' ? 'tracking-[0.05em]' : 'tracking-tighter'}`}
+          >
+            {t('about.title')}
+          </h2>
+        </div>
+        
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start w-full">
           {/* Left Side: Text */}
           <div className="lg:col-span-7 flex flex-col items-center md:items-start text-center md:text-left w-full">
-            {/* Elegant accent line */}
-            <div className="w-24 h-1.5 bg-primary mb-8 rounded-full opacity-80" />
-            
-            <h2 
-              ref={titleRef}
-              className={`text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-primary mb-12 uppercase drop-shadow-sm ${i18n.language === 'hi' ? 'tracking-[0.05em]' : 'tracking-tighter'}`}
-            >
-              {t('about.title')}
-            </h2>
-            
             <div className="space-y-8 text-xl md:text-2xl text-gray-600 font-medium leading-relaxed tracking-wide text-justify w-full">
               <p ref={textRef1}>
                 {t('about.p1')}
@@ -116,7 +117,7 @@ export default function About() {
             <div tabIndex={0} className="relative w-full max-w-md aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl group cursor-pointer">
               <img 
                 src="https://virendra.achtunglabs.co/wp-content/uploads/2026/02/Untitled-design-36.png" 
-                alt="Virendra Chaudhary" 
+                alt="Virender Choudhary" 
                 tabIndex={0} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 border border-black/5 rounded-3xl pointer-events-none" />

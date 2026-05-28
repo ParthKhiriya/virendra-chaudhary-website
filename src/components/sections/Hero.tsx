@@ -21,7 +21,6 @@ const row3 = [...IMAGES].sort(() => Math.random() - 0.5);
 export default function Hero() {
   const { t, i18n } = useTranslation();
   const titleRef = useRef<HTMLHeadingElement>(null);
-  const subtitleRef = useRef<HTMLParagraphElement>(null);
   const marquee1 = useRef<HTMLDivElement>(null);
   const marquee2 = useRef<HTMLDivElement>(null);
   const marquee3 = useRef<HTMLDivElement>(null);
@@ -29,18 +28,13 @@ export default function Hero() {
   const isHi = i18n.language === 'hi';
 
   useEffect(() => {
-    if (titleRef.current && subtitleRef.current) {
+    if (titleRef.current) {
       const tl = gsap.timeline();
       
       tl.fromTo(
         titleRef.current,
         { y: 100, opacity: 0 },
         { y: 0, opacity: 1, duration: 1.2, ease: 'power4.out', delay: 0.2 }
-      ).fromTo(
-        subtitleRef.current,
-        { y: 50, opacity: 0 },
-        { y: 0, opacity: 1, duration: 1, ease: 'power3.out' },
-        "-=0.8"
       );
     }
 
@@ -122,16 +116,11 @@ export default function Hero() {
       <div className="relative z-20 text-center px-4 pointer-events-none">
         <h1 
           ref={titleRef}
-          className={`font-black uppercase text-gray-900 mb-6 drop-shadow-sm tracking-tighter ${isHi ? 'text-6xl md:text-8xl lg:text-9xl' : 'text-[3rem] md:text-[5rem] lg:text-[7rem]'}`}
+          className={`font-black uppercase text-primary mb-6 tracking-tighter ${isHi ? 'text-6xl md:text-8xl lg:text-9xl' : 'text-[3rem] md:text-[5rem] lg:text-[7rem]'}`}
+          style={{ textShadow: '0 10px 40px rgba(0,0,0,0.8), 0 2px 10px rgba(0,0,0,0.5)' }}
         >
           {t('hero.title')}
         </h1>
-        <p 
-          ref={subtitleRef}
-          className="inline-block text-lg md:text-2xl text-primary font-bold tracking-wide bg-white/90 backdrop-blur-md px-8 py-3 rounded-full border border-gray-200 shadow-sm"
-        >
-          {t('hero.subtitle')}
-        </p>
       </div>
     </section>
   );

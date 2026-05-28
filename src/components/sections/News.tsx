@@ -1,9 +1,9 @@
-import { useRef } from 'react';
+import { useRef, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { MoveRight } from 'lucide-react';
+import { MoveRight, MoveLeft, ChevronLeft, ChevronRight } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -19,6 +19,30 @@ const videos = [
   {
     id: "CM1HfGsJirE",
     title: "Virender Choudhary | Dr. Sahdev Choudhary Foundation"
+  },
+  {
+    id: "c4jD19FJPbo",
+    title: "Virender Choudhary News Coverage"
+  },
+  {
+    id: "1WBJ8umZDMY",
+    title: "Dr. Sahdev Choudhary Foundation Update"
+  },
+  {
+    id: "K_yIBKeerGk",
+    title: "Community Outreach & News"
+  },
+  {
+    id: "-FdMyp2-YDc",
+    title: "Social Work & Recognition"
+  },
+  {
+    id: "nHD-fQhAp98",
+    title: "Janpaksh Initiative Highlights"
+  },
+  {
+    id: "z93wz1ihBhM",
+    title: "Latest Media Coverage"
   }
 ];
 
@@ -27,43 +51,54 @@ export default function News() {
   const container = useRef<HTMLElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
   const columnsRef = useRef<HTMLDivElement>(null);
+  const sliderRef = useRef<HTMLDivElement>(null);
 
   useGSAP(() => {
-    // Title animation
-    gsap.fromTo(titleRef.current, 
-      { y: 50, opacity: 0 },
-      { 
-        y: 0, 
-        opacity: 1, 
-        duration: 1, 
-        ease: 'power3.out',
-        scrollTrigger: {
-          trigger: container.current,
-          start: 'top 80%',
-          toggleActions: 'play none none reverse',
-        }
-      }
-    );
-
-    // Cards stagger animation
-    if (columnsRef.current) {
-      gsap.fromTo(columnsRef.current.children, 
-        { y: 100, opacity: 0 },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 1,
-          stagger: 0.2,
+      // Title animation
+      gsap.fromTo(titleRef.current, 
+        { y: 50, opacity: 0 },
+        { 
+          y: 0, 
+          opacity: 1, 
+          duration: 0.6, 
           ease: 'power3.out',
           scrollTrigger: {
-            trigger: columnsRef.current,
-            start: 'top 75%',
+            trigger: container.current,
+            start: 'top 80%',
             toggleActions: 'play none none reverse',
           }
         }
       );
+
+      // Cards stagger animation
+      if (sliderRef.current) {
+        gsap.fromTo(sliderRef.current.children, 
+          { y: 100, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.6,
+            stagger: 0.05,
+            ease: 'power3.out',
+            scrollTrigger: {
+              trigger: sliderRef.current,
+              start: 'top 75%',
+              toggleActions: 'play none none reverse',
+            }
+          }
+        );
     }
   }, { scope: container });
+
+  const scrollSlider = useCallback((direction: 'left' | 'right') => {
+    if (sliderRef.current) {
+      const scrollAmount = window.innerWidth > 768 ? 400 : window.innerWidth * 0.85;
+      sliderRef.current.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  }, []);
 
   return (
     <section 
@@ -71,9 +106,9 @@ export default function News() {
       ref={container}
       className="relative w-full py-24 md:py-32 bg-[#FAFAFA] flex flex-col items-center justify-center overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto w-full relative z-10 flex flex-col items-center">
+      <div className="max-w-[1600px] mx-auto w-full relative z-10 flex flex-col items-center">
         {/* Section Header */}
-        <div className="text-center mb-16 md:mb-24 flex flex-col items-center px-6">
+        <div className="text-center mb-12 md:mb-16 flex flex-col items-center px-6">
           <div className="w-16 h-1 bg-primary mb-8 rounded-full" />
           <h2 
             ref={titleRef}
@@ -83,23 +118,41 @@ export default function News() {
           </h2>
         </div>
 
-        {/* Video Grid / Slider */}
-        <div className="relative w-full" ref={columnsRef}>
+        {/* Navigation Buttons (Desktop Only) */}
+        <div className="hidden md:flex items-center justify-end w-full px-8 mb-6 gap-4 max-w-7xl">
+          <button 
+            onClick={() => scrollSlider('left')}
+            className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center text-primary hover:bg-primary hover:text-gray-900 transition-colors duration-300 shadow-sm"
+          >
+            <ChevronLeft size={24} />
+          </button>
+          <button 
+            onClick={() => scrollSlider('right')}
+            className="w-12 h-12 rounded-full bg-white border border-gray-200 flex items-center justify-center text-primary hover:bg-primary hover:text-gray-900 transition-colors duration-300 shadow-sm"
+          >
+            <ChevronRight size={24} />
+          </button>
+        </div>
+
+        {/* Video Slider */}
+        <div className="relative w-full max-w-[1600px]" ref={columnsRef}>
           {/* Hide webkit scrollbar */}
           <style>{`
             #news-slider::-webkit-scrollbar {
               display: none;
             }
           `}</style>
+          
           <div 
             id="news-slider"
-            className="flex overflow-x-auto md:grid md:grid-cols-3 gap-6 md:gap-8 lg:gap-12 w-full pb-8 md:pb-0 px-[7.5vw] md:px-6 lg:px-0 snap-x snap-mandatory"
+            ref={sliderRef}
+            className="flex overflow-x-auto gap-6 md:gap-8 w-full pb-8 md:pb-12 px-[7.5vw] md:px-12 snap-x snap-mandatory"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
             {videos.map((video, idx) => (
               <div 
                 key={idx}
-                tabIndex={0} className="group relative flex flex-col bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 w-[85vw] shrink-0 snap-center md:w-auto md:snap-align-none border border-gray-100/50"
+                tabIndex={0} className="group relative flex flex-col bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 w-[85vw] md:w-[320px] lg:w-[350px] shrink-0 snap-center border border-gray-100/50"
               >
                 {/* Accent Glow on Hover */}
                 <div tabIndex={0} className="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors duration-500 z-0 pointer-events-none" />
@@ -125,11 +178,12 @@ export default function News() {
           </div>
 
           {/* Mobile Swipe Hint */}
-          <div className="md:hidden flex items-center justify-center gap-2 mt-8 text-primary animate-pulse opacity-80">
+          <div className="md:hidden flex items-center justify-center gap-2 mt-4 text-primary animate-pulse opacity-80">
+            <MoveLeft className="w-4 h-4 opacity-50" />
             <span className="text-xs uppercase tracking-widest font-bold">
-              {i18n.language === 'hi' ? 'और देखें' : 'Swipe to view more'}
+              {i18n.language === 'hi' ? 'स्क्रोल करें' : 'Swipe to view more'}
             </span>
-            <MoveRight className="w-4 h-4" />
+            <MoveRight className="w-4 h-4 opacity-50" />
           </div>
         </div>
       </div>

@@ -4,20 +4,33 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, ZoomIn } from 'lucide-react';
 
 const galleryImages = [
+  // New Google Drive Images (Upper part)
+  // "/images/gallery/new/0L4A9379.JPG",
+  "/images/gallery/new/0L4A9192.JPG",
+  "/images/gallery/new/0L4A9216.JPG",
+  "/images/gallery/new/0L4A9522.JPG",
+  "/images/gallery/new/0L4A9235.JPG",
+  "/images/gallery/new/0L4A9574.JPG",
+  "/images/gallery/new/0L4A9626.JPG",
+  "/images/gallery/new/A57I6762.JPG",
+  "/images/gallery/new/A57I7745.JPG",
+  "/images/gallery/new/A57I7762.JPG",
+  "/images/gallery/new/A57I7791.JPG",
+  "/images/gallery/new/A57I7818.JPG",
+  "/images/gallery/new/A57I7852.JPG",
+
+  // Original Images (Lower part)
   "https://virendra.achtunglabs.co/wp-content/uploads/2017/11/27.png",
-  "https://virendra.achtunglabs.co/wp-content/uploads/2017/11/28.png",
   "https://virendra.achtunglabs.co/wp-content/uploads/2017/11/30.png",
-  "https://virendra.achtunglabs.co/wp-content/uploads/2017/11/24.png",
   "https://virendra.achtunglabs.co/wp-content/uploads/2017/11/25.png",
-  "https://virendra.achtunglabs.co/wp-content/uploads/2017/11/23.png",
   "https://virendra.achtunglabs.co/wp-content/uploads/2017/11/16.png",
   "https://virendra.achtunglabs.co/wp-content/uploads/2017/11/15.png",
   "https://virendra.achtunglabs.co/wp-content/uploads/2017/11/14.png",
   "https://virendra.achtunglabs.co/wp-content/uploads/2017/11/13.png",
   "https://virendra.achtunglabs.co/wp-content/uploads/2017/11/12.png",
   "https://virendra.achtunglabs.co/wp-content/uploads/2017/11/11.png",
-  "https://virendra.achtunglabs.co/wp-content/uploads/2017/11/9.png",
-  "https://virendra.achtunglabs.co/wp-content/uploads/2017/11/1.png"
+  // "https://virendra.achtunglabs.co/wp-content/uploads/2017/11/9.png",
+  // "https://virendra.achtunglabs.co/wp-content/uploads/2017/11/1.png"
 ];
 
 export default function Gallery() {
@@ -58,16 +71,18 @@ export default function Gallery() {
       <section className="max-w-[1600px] mx-auto px-4 md:px-8 relative z-10">
         <div className="grid grid-cols-2 md:grid-cols-4 grid-flow-dense auto-rows-[150px] md:auto-rows-[250px] gap-3 md:gap-4">
           {galleryImages.map((src, index) => {
-            // Create a varied grid layout by applying different spans
             let spanClasses = 'col-span-1 row-span-1';
             
-            // Create a dynamic pattern out of 14 images
-            if (index === 0) spanClasses = 'col-span-2 row-span-2'; // Large hero image
-            else if (index === 3) spanClasses = 'col-span-1 row-span-2'; // Tall vertical image
-            else if (index === 6) spanClasses = 'col-span-2 row-span-1'; // Wide horizontal image
-            else if (index === 8) spanClasses = 'col-span-2 row-span-2'; // Large middle image
-            else if (index === 11) spanClasses = 'col-span-1 row-span-2'; // Tall vertical image
-            else if (index === 13) spanClasses = 'col-span-2 row-span-1'; // Final podium image to perfectly close the grid
+            // Mathematically perfect 14-item tessellation pattern for both grid-cols-4 and grid-cols-2
+            const patternIndex = index % 14;
+            if (patternIndex === 0) spanClasses = 'col-span-2 row-span-2';
+            else if (patternIndex === 3) spanClasses = 'col-span-1 row-span-2';
+            else if (patternIndex === 5) spanClasses = 'col-span-2 row-span-1';
+            else if (patternIndex === 8) spanClasses = 'col-span-2 row-span-2';
+            else if (patternIndex === 10) spanClasses = 'col-span-1 row-span-2';
+            else if (patternIndex === 12) spanClasses = 'col-span-2 row-span-1';
+
+            const isLastImage = index === galleryImages.length - 1;
 
             return (
               <motion.div
@@ -76,14 +91,16 @@ export default function Gallery() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "100px" }}
                 transition={{ duration: 0.6, delay: (index % 6) * 0.1, ease: [0.25, 0.4, 0.25, 1] }}
-                className={`relative group overflow-hidden rounded-2xl cursor-pointer bg-gray-100 ${spanClasses}`}
+                className={`relative group overflow-hidden rounded-2xl cursor-pointer bg-gray-100 ${!isLastImage ? spanClasses : ''}`}
+                style={isLastImage ? { gridColumn: 'auto / -1' } : undefined}
                 onClick={() => setSelectedImage(src)}
               >
                 <motion.img 
                   layoutId={`gallery-image-${src}`}
                   src={src} 
                   alt={`Gallery image ${index + 1}`} 
-                  tabIndex={0} className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000 ease-out"
+                  // Using object-top for the last image to guarantee no face clipping when it becomes ultra-wide
+                  tabIndex={0} className={`absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000 ease-out ${isLastImage ? 'object-[center_10%]' : 'object-[center_20%]'}`}
                   loading="lazy"
                 />
                 

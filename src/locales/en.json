@@ -1,13 +1,19 @@
 {
   "translation": {
+    "common": {
+      "readMore": "Read More",
+      "learnMore": "Discover",
+      "title": "Virender Choudhary",
+      "mission": "Empowering Society through Education, Service & Action"
+    },
     "hero": {
-      "title": "Virendra Chaudhary",
+      "title": "Virender Choudhary",
       "subtitle": "A life — that walked alongside society."
     },
     "about": {
       "title": "Introduction",
-      "p1": "Virendra Chaudhary's life is a story of values where success is measured by responsibility towards society. Through his actions, he has made honesty, service, and dedication his core principles. His deep sensitivity towards social concerns is clearly visible in every decision and effort. His continuous endeavor for the upliftment of every section of society reflects his visionary leadership. He believes that development is truly meaningful only when its benefits reach the last person. His life inspires us that true success is one that moves forward taking society along.",
-      "p2": "With his experience, knowledge, and sensitive approach, Virendra Chaudhary has made public service not just a duty but the very purpose of his life. He believes that positive change is only possible through dialogue, participation, and continuous effort. Understanding public issues and finding practical solutions has been the main foundation of his working style. Empowering the youth of the society and guiding them in the right direction is among his top priorities.",
+      "p1": "Virender Choudhary's life is a story of values where success is measured by responsibility towards society. Through his actions, he has made honesty, service, and dedication his core principles. His deep sensitivity towards social concerns is clearly visible in every decision and effort. His continuous endeavor for the upliftment of every section of society reflects his visionary leadership. He believes that development is truly meaningful only when its benefits reach the last person. His life inspires us that true success is one that moves forward taking society along.",
+      "p2": "With his experience, knowledge, and sensitive approach, Virender Choudhary has made public service not just a duty but the very purpose of his life. He believes that positive change is only possible through dialogue, participation, and continuous effort. Understanding public issues and finding practical solutions has been the main foundation of his working style. Empowering the youth of the society and guiding them in the right direction is among his top priorities.",
       "pointers": [
         {
           "title": "Birth & Early Education",
@@ -58,7 +64,7 @@
           { "year": "2005–06", "title": "Social Responsibility Award", "desc": "" },
           { "year": "2006", "title": "Social Work Honour", "desc": "" },
           { "year": "2002–03, 2005–06", "title": "Best Customer Service Award", "desc": "" },
-          { "year": "Education, Environment, Sports & Culture", "title": "Diverse Honours", "desc": "" }
+          { "year": "", "title": "Diverse Honours (Education, Environment, Sports & Culture)", "desc": "" }
         ]
       },
       "affiliations": {
@@ -104,11 +110,11 @@
       },
       "col3": {
         "title": "Personality & Vision",
-        "text": "Mr. Virendra Chaudhary's personality is built on restraint, simplicity, foresight, and institutional thinking. He believes the true value of success is realized when its benefits reach the last person in society. His life is a strong example of the balance between entrepreneurship and social responsibility. His leadership has been based on service, ethics, and inclusive development. He prioritizes national interest and social harmony over personal success. His vision inspires the building of an empowered, self-reliant, and responsible society for future generations. His life teaches that true leadership stems from humility and public welfare."
+        "text": "Mr. Virender Choudhary's personality is built on restraint, simplicity, foresight, and institutional thinking. He believes the true value of success is realized when its benefits reach the last person in society. His life is a strong example of the balance between entrepreneurship and social responsibility. His leadership has been based on service, ethics, and inclusive development. He prioritizes national interest and social harmony over personal success. His vision inspires the building of an empowered, self-reliant, and responsible society for future generations. His life teaches that true leadership stems from humility and public welfare."
       }
     },
     "education": {
-      "title": "Transformation through Education",
+      "title": "Institutional Efforts",
       "desc": "Institutional efforts for rural and girl child education, where opportunities were given with respect."
     },
     "news": {
@@ -125,7 +131,7 @@
       "quickLinks": "Quick Links",
       "contactInfo": "Contact Info",
       "address": "First India News, No. 9, S.B Tower Ground Floor, Sahakar Marg, Jyothi Nagar, Lalkothi, Jaipur, Rajasthan 302001",
-      "rights": "Mr. Virender Chaudhary © 2026. All Rights Reserved."
+      "rights": "Mr. Virender Choudhary © 2026. All Rights Reserved."
     },
     "foundationPage": {
       "title": "Foundation's Major Initiatives",
@@ -193,11 +199,11 @@
     },
     "lifeJourney": {
       "pageTitle": "Life Journey",
-      "pageSubtitle": "Mr. Virendra Chaudhary",
+      "pageSubtitle": "Mr. Virender Choudhary",
       "sections": [
         {
           "title": "Early Life & Education",
-          "desc": "Mr. Virendra Chaudhary was born on May 1, 1969, in Rajasthan. He received his early education at Bikaner Boys School, Bikaner, where his inclination towards discipline, leadership, and social concerns developed. For higher education, he completed his graduation in Electronics Engineering (B.E.) from Amravati University, Maharashtra. To develop his technical vision on a global scale, he went to Australia, where he earned an M.Tech degree in Information Technology and Telecommunications from the University of South Australia. This international academic experience laid the foundation for his entire professional life."
+          "desc": "Mr. Virender Choudhary was born on May 1, 1969, in Rajasthan. He received his early education at Bikaner Boys School, Bikaner, where his inclination towards discipline, leadership, and social concerns developed. For higher education, he completed his graduation in Electronics Engineering (B.E.) from Amravati University, Maharashtra. To develop his technical vision on a global scale, he went to Australia, where he earned an M.Tech degree in Information Technology and Telecommunications from the University of South Australia. This international academic experience laid the foundation for his entire professional life."
         },
         {
           "title": "Academic & Early Professional Life",
@@ -213,7 +219,7 @@
         },
         {
           "title": "Social & Public Leadership",
-          "desc": "Mr. Virendra Chaudhary has played leadership roles in numerous social, industrial, and sports organizations. He served as the President of the Federation of Rajasthan Trade and Industry (FORTI), Bikaner, where he strengthened the dialogue between industry and government. As the President of Marubhumi Seva Avam Anusandhan Sansthan, he worked towards RTI, rural development, and environmental conservation. Alongside this, he served as the Vice President of the Rajasthan Rifle Association and President of the Nagaur Rifle Shooting Association, aiming to guide the youth in a positive direction through sports."
+          "desc": "Mr. Virender Choudhary has played leadership roles in numerous social, industrial, and sports organizations. He served as the President of the Federation of Rajasthan Trade and Industry (FORTI), Bikaner, where he strengthened the dialogue between industry and government. As the President of Marubhumi Seva Avam Anusandhan Sansthan, he worked towards RTI, rural development, and environmental conservation. Alongside this, he served as the Vice President of the Rajasthan Rifle Association and President of the Nagaur Rifle Shooting Association, aiming to guide the youth in a positive direction through sports."
         }
       ]
     }

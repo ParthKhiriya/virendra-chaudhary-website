@@ -57,7 +57,7 @@ export default function LifeJourney() {
           <div className="absolute inset-0 bg-gray-900/60 z-10" />
           <img 
             src="https://virendra.achtunglabs.co/wp-content/uploads/2018/05/2.png" 
-            alt="Virendra Chaudhary" 
+            alt="Virender Choudhary" 
             className="w-full h-full object-cover object-top filter grayscale brightness-75"
           />
         </motion.div>

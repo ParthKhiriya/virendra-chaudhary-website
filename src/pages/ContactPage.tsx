@@ -13,15 +13,19 @@ export default function ContactPage() {
       icon: Instagram,
       link: 'https://www.instagram.com/virenderchoudharyrj21?igsh=MWVjZThvYTFwdWp1aw==',
       color: 'hover:text-pink-600',
-      bgHover: 'group-hover:bg-pink-50'
+      bgHover: 'group-hover:bg-pink-50',
+      hintEn: 'Click to open',
+      hintHi: 'खोलने के लिए क्लिक करें'
     },
     {
       name: 'Facebook',
-      handle: 'Virendra Chaudhary',
+      handle: 'Virender Choudhary',
       icon: Facebook,
       link: 'https://www.facebook.com/share/18RXy3ZZ4A/?mibextid=wwXIfr',
       color: 'hover:text-blue-600',
-      bgHover: 'group-hover:bg-blue-50'
+      bgHover: 'group-hover:bg-blue-50',
+      hintEn: 'Click to open',
+      hintHi: 'खोलने के लिए क्लिक करें'
     },
     {
       name: 'X (Twitter)',
@@ -29,7 +33,9 @@ export default function ContactPage() {
       icon: Twitter,
       link: 'https://x.com/virender_rj21?s=21',
       color: 'hover:text-gray-900',
-      bgHover: 'group-hover:bg-gray-200'
+      bgHover: 'group-hover:bg-gray-200',
+      hintEn: 'Click to open',
+      hintHi: 'खोलने के लिए क्लिक करें'
     },
     {
       name: 'Email',
@@ -37,7 +43,9 @@ export default function ContactPage() {
       icon: Mail,
       link: 'mailto:parthkhiriya2005@gmail.com',
       color: 'hover:text-red-500',
-      bgHover: 'group-hover:bg-red-50'
+      bgHover: 'group-hover:bg-red-50',
+      hintEn: 'Click to send mail',
+      hintHi: 'ईमेल भेजने के लिए क्लिक करें'
     }
   ];
 
@@ -88,6 +96,12 @@ export default function ContactPage() {
                     <h3 className="text-lg md:text-xl font-bold text-gray-900 group-hover:text-primary transition-colors duration-300 break-all md:break-normal">
                       {social.handle}
                     </h3>
+                    <p className="text-xs text-primary/60 group-hover:text-primary mt-1.5 md:mt-2 font-bold tracking-widest uppercase flex items-center gap-1.5 transition-colors duration-300">
+                      {i18n.language === 'hi' ? social.hintHi : social.hintEn}
+                      <svg className="w-3.5 h-3.5 group-hover:translate-x-1.5 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                      </svg>
+                    </p>
                   </div>
                   
                   <div className="absolute bottom-6 right-6 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 hidden md:block">

@@ -47,7 +47,7 @@ export default function Honours() {
       { 
         y: 0, 
         opacity: 1, 
-        duration: 1, 
+        duration: 0.6, 
         ease: 'power3.out',
         scrollTrigger: {
           trigger: container.current,
@@ -64,8 +64,8 @@ export default function Honours() {
         {
           y: 0,
           opacity: 1,
-          duration: 1,
-          stagger: 0.2,
+          duration: 0.6,
+          stagger: 0.05,
           ease: 'power3.out',
           scrollTrigger: {
             trigger: columnsRef.current,
@@ -84,14 +84,14 @@ export default function Honours() {
       text: t('honours.col1.text')
     },
     {
-      image: "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/2-3.png",
-      title: t('honours.col2.title'),
-      text: t('honours.col2.text')
-    },
-    {
       image: "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/3-3.png",
       title: t('honours.col3.title'),
       text: t('honours.col3.text')
+    },
+    {
+      image: "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/2-3.png",
+      title: t('honours.col2.title'),
+      text: t('honours.col2.text')
     }
   ];
 

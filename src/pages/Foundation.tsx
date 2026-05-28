@@ -26,7 +26,7 @@ const ImageSlider = ({ images, title }: { images: string[], title: string }) => 
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -50 }}
-              transition={{ duration: 0.8, ease: "easeInOut" }}
+              transition={{ duration: 0.6, ease: "easeInOut" }}
               className="absolute inset-0 w-full h-full object-cover"
               loading="lazy"
             />
@@ -80,7 +80,7 @@ export default function Foundation() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         >
           <h1 className="text-4xl md:text-6xl font-black text-primary uppercase tracking-tighter mb-8">
             {t('foundationPage.title')}
@@ -91,7 +91,7 @@ export default function Foundation() {
         <motion.div 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.4, duration: 1 }}
+          transition={{ delay: 0.2, duration: 0.6 }}
           className="mt-12 flex justify-center"
         >
           <div className="animate-bounce p-3 bg-white rounded-full border border-gray-200 text-primary shadow-lg">
@@ -111,7 +111,7 @@ export default function Foundation() {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-10%" }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
               className={`flex flex-col ${isEven ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-12 md:gap-20`}
             >
               

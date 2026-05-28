@@ -5,19 +5,19 @@ import { X, ZoomIn } from 'lucide-react';
 
 const galleryImages = [
   // New Google Drive Images (Upper part)
-  // "/images/gallery/new/0L4A9379.JPG",
-  "/images/gallery/new/0L4A9192.JPG",
-  "/images/gallery/new/0L4A9216.JPG",
-  "/images/gallery/new/0L4A9522.JPG",
-  "/images/gallery/new/0L4A9235.JPG",
-  "/images/gallery/new/0L4A9574.JPG",
-  "/images/gallery/new/0L4A9626.JPG",
-  "/images/gallery/new/A57I6762.JPG",
-  "/images/gallery/new/A57I7745.JPG",
-  "/images/gallery/new/A57I7762.JPG",
-  "/images/gallery/new/A57I7791.JPG",
-  "/images/gallery/new/A57I7818.JPG",
-  "/images/gallery/new/A57I7852.JPG",
+  // "/images/gallery/new/0L4A9379.webp",
+  "/images/gallery/new/0L4A9192.webp",
+  "/images/gallery/new/0L4A9216.webp",
+  "/images/gallery/new/0L4A9522.webp",
+  "/images/gallery/new/0L4A9235.webp",
+  "/images/gallery/new/0L4A9574.webp",
+  "/images/gallery/new/0L4A9626.webp",
+  "/images/gallery/new/A57I6762.webp",
+  "/images/gallery/new/A57I7745.webp",
+  "/images/gallery/new/A57I7762.webp",
+  "/images/gallery/new/A57I7791.webp",
+  "/images/gallery/new/A57I7818.webp",
+  "/images/gallery/new/A57I7852.webp",
 
   // Original Images (Lower part)
   "https://virendra.achtunglabs.co/wp-content/uploads/2017/11/27.png",

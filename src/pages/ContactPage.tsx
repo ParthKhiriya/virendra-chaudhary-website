@@ -39,9 +39,9 @@ export default function ContactPage() {
     },
     {
       name: 'Email',
-      handle: 'parthkhiriya2005@gmail.com',
+      handle: 'contact@virenderchoudhary.com',
       icon: Mail,
-      link: 'mailto:parthkhiriya2005@gmail.com',
+      link: 'mailto:contact@virenderchoudhary.com',
       color: 'hover:text-red-500',
       bgHover: 'group-hover:bg-red-50',
       hintEn: 'Click to send mail',
@@ -57,7 +57,7 @@ export default function ContactPage() {
 
       {/* Get in Touch Section */}
       <section className="relative w-full py-16 md:py-20 flex flex-col justify-center">
-        <div className="max-w-4xl mx-auto w-full px-6 relative z-10 flex flex-col">
+        <div className="max-w-5xl mx-auto w-full px-6 relative z-10 flex flex-col">
           <div className="text-center flex flex-col items-center mb-12">
             <div className="w-16 h-1 bg-primary mb-6 md:mb-8 rounded-full shadow-[0_0_10px_rgba(255,200,1,0.5)]" />
             <h1 
@@ -72,7 +72,7 @@ export default function ContactPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10 w-full max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10 w-full max-w-5xl mx-auto">
             {socials.map((social, index) => {
               const Icon = social.icon;
               return (
@@ -89,11 +89,14 @@ export default function ContactPage() {
                     <Icon className={`w-7 h-7 text-gray-700 transition-colors duration-500 ${social.color}`} />
                   </div>
                   
-                  <div className="flex flex-col items-center md:items-start text-center md:text-left pt-1">
+                  <div className="flex flex-col items-center md:items-start text-center md:text-left pt-1 min-w-0 flex-1 w-full">
                     <p className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-1">
                       {social.name}
                     </p>
-                    <h3 className="text-lg md:text-xl font-bold text-gray-900 group-hover:text-primary transition-colors duration-300 break-all md:break-normal">
+                    <h3 
+                      className="text-[17px] md:text-lg lg:text-xl font-bold text-gray-900 group-hover:text-primary transition-colors duration-300 truncate w-full"
+                      title={social.handle}
+                    >
                       {social.handle}
                     </h3>
                     <p className="text-xs text-primary/60 group-hover:text-primary mt-1.5 md:mt-2 font-bold tracking-widest uppercase flex items-center gap-1.5 transition-colors duration-300">

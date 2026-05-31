@@ -98,7 +98,7 @@ export default function Header() {
                 </div>
                 {i18n.language === 'hi' ? 'कॉल करें' : 'Call'}
               </a>
-              <a href="mailto:parthkhiriya2005@gmail.com" onClick={() => setIsContactOpen(false)} className="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 rounded-xl transition-colors text-gray-900 font-bold whitespace-nowrap">
+              <a href="mailto:contact@virenderchoudhary.com" onClick={() => setIsContactOpen(false)} className="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 rounded-xl transition-colors text-gray-900 font-bold whitespace-nowrap">
                 <div className="w-8 h-8 rounded-full bg-red-50 flex items-center justify-center text-red-500 shrink-0">
                   <Mail size={16} />
                 </div>

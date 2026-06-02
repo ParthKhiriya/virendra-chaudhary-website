@@ -236,8 +236,8 @@ export default function AboutPage() {
           </div>
           
           <div className="bg-[#111111] rounded-3xl border border-gray-800 shadow-2xl shadow-black/50 overflow-hidden">
-            <div className="w-full">
-              <table className="w-full text-left border-collapse">
+            <div className="w-full overflow-x-auto">
+              <table className="w-full min-w-[700px] md:min-w-full text-left border-collapse">
                 <thead>
                   <tr className="bg-[#1a1a1a] text-primary border-b border-gray-800">
                     <th className="py-4 px-4 md:py-6 md:px-8 text-xs md:text-sm font-black uppercase tracking-widest">{t('aboutPage.affiliations.table.role')}</th>

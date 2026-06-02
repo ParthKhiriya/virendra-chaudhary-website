@@ -235,6 +235,10 @@ export default function AboutPage() {
             <div className="w-16 h-1.5 bg-primary rounded-full mt-4" />
           </div>
           
+          <div className="flex items-center text-xs text-gray-500 mb-3 md:hidden animate-pulse pl-2">
+            <span className="mr-2">{t('aboutPage.affiliations.scrollHint')}</span>
+          </div>
+
           <div className="bg-[#111111] rounded-3xl border border-gray-800 shadow-2xl shadow-black/50 overflow-hidden">
             <div className="w-full overflow-x-auto">
               <table className="w-full min-w-[700px] md:min-w-full text-left border-collapse">

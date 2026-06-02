@@ -69,6 +69,7 @@
       },
       "affiliations": {
         "title": "Leadership & Affiliations",
+        "scrollHint": "Swipe left to see more ➔",
         "table": {
           "role": "Role / Post",
           "org": "Organization / Institute",

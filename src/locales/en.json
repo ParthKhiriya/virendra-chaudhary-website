@@ -134,6 +134,24 @@
       "rights": "Mr. Virender Choudhary © 2026. All Rights Reserved."
     },
     "foundationPage": {
+      "name": "Dr. Sahdev Choudhary Foundation",
+      "aboutTitle": "About the Foundation",
+      "aboutDesc": [
+        "The primary objective of the Dr. Sahdev Choudhary Foundation is to bring positive change to society by providing an empowering, ethical, and public-interest-driven platform. The Foundation strives to bring forward youth and conscious citizens who deeply understand their real social, economic, and cultural surroundings and wish to present them with responsibility.",
+        "We firmly believe that democracy and society are strengthened only when grassroots voices and factual public issues reach the public sphere with absolute integrity. To this end, the foundation is committed to fostering civic dialogue, strengthening media ethics, and ensuring the rights and voices of marginalized communities are protected and amplified through digital media.",
+        "Through major initiatives like the Janpaksh Fellowship Program, Constitutional Knowledge Competitions, Janpaksh Conferences, and significant literary events, the foundation actively engages the community. These structured programs are designed not only to impart practical skills but also to instill a deep sense of social responsibility, media ethics, and constitutional values among the participants."
+      ],
+      "objectivesTitle": "Key Objectives",
+      "objectives": [
+        { "title": "Empowered Platform", "desc": "Providing an organized and empowered platform for civic journalism." },
+        { "title": "Grassroots Issues", "desc": "Bringing real, grassroots public issues and stories to the forefront." },
+        { "title": "Democratic Responsibility", "desc": "Developing constitutional awareness and democratic responsibility among youth and citizens." },
+        { "title": "Media Ethics", "desc": "Strengthening verification, impartiality, and ethics in public discourse." },
+        { "title": "Responsible Reporting", "desc": "Cultivating a culture of responsible reporting against fake news and misinformation." },
+        { "title": "Digital Respect", "desc": "Ensuring respect and credibility for the voices of rural, semi-urban, and marginalized communities in the digital space." },
+        { "title": "Skill & Sensitivity", "desc": "Developing ideological and social sensitivity alongside technical skills." },
+        { "title": "Reliable Network", "desc": "Laying the foundation of a reliable citizen journalist network at the state level." }
+      ],
       "title": "Foundation's Major Initiatives",
       "initiatives": [
         {

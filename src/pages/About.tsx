@@ -201,7 +201,7 @@ export default function AboutPage() {
             <div className="w-16 h-1.5 bg-primary rounded-full mt-4" />
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 text-center">
             {awardsData.map((award, idx) => (
               <motion.div 
                 key={idx}
@@ -209,7 +209,7 @@ export default function AboutPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                tabIndex={0} className="bg-[#111111] flex flex-col items-center justify-center p-8 md:p-10 rounded-3xl border border-gray-800 shadow-xl shadow-black/50 hover:shadow-primary/10 hover:-translate-y-2 hover:border-primary/30 transition-all duration-300 relative group"
+                tabIndex={0} className={`bg-[#111111] flex flex-col items-center justify-center p-8 md:p-10 rounded-3xl border border-gray-800 shadow-xl shadow-black/50 hover:shadow-primary/10 hover:-translate-y-2 hover:border-primary/30 transition-all duration-300 relative group ${idx === 0 ? 'md:col-span-3' : ''}`}
               >
                 <div tabIndex={0} className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-3xl" />
                 <span className="text-[0.8rem] md:text-sm font-bold text-primary tracking-widest uppercase mb-4 block whitespace-nowrap min-h-[1.25rem]">
@@ -218,6 +218,12 @@ export default function AboutPage() {
                 <h4 tabIndex={0} className="text-xl md:text-2xl font-black text-white leading-snug tracking-wide group-hover:text-primary transition-colors duration-300 z-10">
                   {award.title}
                 </h4>
+                {award.desc && (
+                  <p 
+                    className="mt-5 text-sm md:text-base text-gray-400 font-medium leading-relaxed max-w-4xl mx-auto z-10"
+                    dangerouslySetInnerHTML={{ __html: award.desc }}
+                  />
+                )}
               </motion.div>
             ))}
           </div>

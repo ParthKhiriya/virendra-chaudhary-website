@@ -42,15 +42,17 @@
       ]
     },
     "aboutPage": {
-      "personalDetails": "According to personal details, the birth year is 1969 and the permanent address is Mundwa Road, Nagaur, Rajasthan. Regarding educational qualifications, he obtained his M.Tech degree in Information Technology and Telecommunications from the University of South Australia between 1994 and 1995. Prior to this, he completed his B.E. in Electronics Engineering from Amravati University, Maharashtra (1987-1991). His school education was completed at Bikaner Boys School, Bikaner from 1976 to 1987.",
+      "personalDetails": "According to personal details, the birth year is 1969 and the permanent address is Mundwa Road, Nagaur, Rajasthan. Regarding educational qualifications, he obtained his M.Tech degree in Information Technology and Telecommunications from the University of South Australia, Adelaide between 1994 and 1996. Prior to this, he completed his B.E. in Electronics Engineering from Amravati University, Maharashtra (1987-1991). His school education was completed at Bikaner Boys School, Bikaner from 1976 to 1987.",
       "timeline": [
         { "year": "1991–1993", "title": "Lecturer", "org": "Maharaja Surajmal Institute of Technology, New Delhi", "desc": "Teaching and Management" },
         { "year": "1996–1997", "title": "Telecom Consultant", "org": "Saturn Telecommunications Ltd., New Delhi", "desc": "Telecom Consultancy" },
         { "year": "1998–Present", "title": "Mahindra Vehicle Dealer", "org": "Nagaur Automobiles Pvt. Ltd.", "desc": "Currently managed by younger brother" },
-        { "year": "2000–Present", "title": "Tata Passenger Cars Dealer", "org": "Marwar Motors Pvt. Ltd., Bikaner", "desc": "Awarded Best Dealer (2002–03, 2005–06)" },
-        { "year": "2002–Present", "title": "Management", "org": "Baldevram Mirdha Institute of Technology, Jaipur", "desc": "Engineering Institute Management" },
-        { "year": "2006–Present", "title": "Management", "org": "BMIT East Campus, Jaipur", "desc": "Engineering Institute Management" },
-        { "year": "2009–Present", "title": "Management", "org": "Maharani Kishori Devi Girls School, Bikaner", "desc": "Girls' Residential School Management" }
+        { "year": "2000–2017", "title": "Tata Passenger Cars Dealer", "org": "Marwar Motors Pvt. Ltd., Bikaner", "desc": "Awarded Best Dealer (2002–03, 2005–06)" },
+        { "year": "2002–2015", "title": "Management", "org": "Baldevram Mirdha Institute of Technology, Jaipur", "desc": "Engineering Institute Management" },
+        { "year": "2006–2015", "title": "Management", "org": "BMIT East Campus, Jaipur", "desc": "Engineering Institute Management" },
+        { "year": "2009–Present", "title": "Management", "org": "Maharani Kishori Devi Girls School, Bikaner", "desc": "Girls' Residential School Management" },
+        { "year": "2013–Present", "title": "Owner", "org": "Marwar Trucking Pvt. Ltd., Bikaner and Jodhpur", "desc": "Managing widespread transport and logistics operations" },
+        { "year": "2013–Present", "title": "Director", "org": "First India News, Jaipur", "desc": "Leading media and news broadcasting initiatives" }
       ],
       "socialWork": {
         "title": "Social Work & Contributions",

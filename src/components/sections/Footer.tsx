@@ -30,7 +30,7 @@ export default function Footer() {
           {/* Brand & Tagline */}
           <div className="lg:col-span-5 pr-0 lg:pr-12 flex flex-col items-start">
             <img 
-              src="https://virendra.achtunglabs.co/wp-content/uploads/2018/05/2.png" 
+              src="/images/new_images/Footer Image/footer.jpg" 
               alt="Virender Choudhary" 
               className="w-32 md:w-40 h-32 md:h-40 object-cover rounded-full border-2 border-gray-800 shadow-xl mb-6 hover:border-primary transition-colors duration-300"
             />

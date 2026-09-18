@@ -79,17 +79,17 @@ export default function Honours() {
 
   const columns = [
     {
-      image: "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/1-3.png",
+      image: "/images/new_images/Honour Services and Leadership Images/0L4A9522.webp",
       title: t('honours.col1.title'),
       text: t('honours.col1.text')
     },
     {
-      image: "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/3-3.png",
+      image: "/images/new_images/Honour Services and Leadership Images/A57I7818.webp",
       title: t('honours.col3.title'),
       text: t('honours.col3.text')
     },
     {
-      image: "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/2-3.png",
+      image: "/images/new_images/Honour Services and Leadership Images/_Q9A8951.JPG",
       title: t('honours.col2.title'),
       text: t('honours.col2.text')
     }

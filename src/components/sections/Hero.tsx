@@ -3,14 +3,15 @@ import { useTranslation } from 'react-i18next';
 import gsap from 'gsap';
 
 const IMAGES = [
-  'https://virendra.achtunglabs.co/wp-content/uploads/2026/02/Untitled-design-42.png',
-  'https://virendra.achtunglabs.co/wp-content/uploads/2026/02/Untitled-design-36.png',
-  'https://virendra.achtunglabs.co/wp-content/uploads/2026/02/2-3.png',
-  'https://virendra.achtunglabs.co/wp-content/uploads/2026/02/3-3.png',
-  'https://virendra.achtunglabs.co/wp-content/uploads/2026/02/1-2.png',
-  'https://virendra.achtunglabs.co/wp-content/uploads/2026/02/2-2.png',
-  'https://virendra.achtunglabs.co/wp-content/uploads/2026/02/4.png',
-  'https://virendra.achtunglabs.co/wp-content/uploads/2026/02/5.png'
+  '/images/new_images/Hero Section Images/0L4A9235.webp',
+  '/images/new_images/Hero Section Images/0L4A9379.webp',
+  '/images/new_images/Hero Section Images/0L4A9522.webp',
+  '/images/new_images/Hero Section Images/0L4A9799.jpg',
+  '/images/new_images/Hero Section Images/743940635_17958356334170679_8457067372864711758_n.jpg',
+  '/images/new_images/Hero Section Images/A57I6762.webp',
+  '/images/new_images/Hero Section Images/A57I7818.webp',
+  '/images/new_images/Hero Section Images/_Q9A8951.JPG',
+  '/images/new_images/Hero Section Images/temp_A57I7852.webp'
 ];
 
 // Shuffle arrays so each row feels organic
@@ -119,7 +120,7 @@ export default function Hero() {
           className={`font-black uppercase text-primary mb-6 tracking-tighter ${isHi ? 'text-6xl md:text-8xl lg:text-9xl' : 'text-[3rem] md:text-[5rem] lg:text-[7rem]'}`}
           style={{ textShadow: '0 10px 40px rgba(0,0,0,0.8), 0 2px 10px rgba(0,0,0,0.5)' }}
         >
-          {t('hero.title')}
+          {t('hero.title').split(' ').join('\u00A0\u00A0\u00A0\u00A0')}
         </h1>
       </div>
     </section>

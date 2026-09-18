@@ -9,11 +9,11 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const images = [
-  "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/1-2.png",
-  "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/2-2.png",
-  "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/3-2.png",
-  "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/4.png",
-  "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/5.png"
+  "/images/new_images/Institutional Efforts Images/0L4A9192.webp",
+  "/images/new_images/Institutional Efforts Images/0L4A9574.webp",
+  "/images/new_images/Institutional Efforts Images/A57I7745.webp",
+  "/images/new_images/Institutional Efforts Images/A57I7762.webp",
+  "/images/new_images/Institutional Efforts Images/A57I7791.webp"
 ];
 
 export default function Education() {

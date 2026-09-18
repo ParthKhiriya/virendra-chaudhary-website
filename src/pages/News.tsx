@@ -6,14 +6,14 @@ import { ChevronLeft, ChevronRight, X, Maximize2 } from 'lucide-react';
 // Newspaper cutouts extracted from the original site
 const newsImages = [
   "/images/news/new_news.png",
-  "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-09-at-8.49.03-PM.jpeg",
-  "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-09-at-8.49.02-PM-3.jpeg",
-  "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-09-at-8.49.02-PM-2.jpeg",
-  "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-09-at-8.49.02-PM-1.jpeg",
-  "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-09-at-8.49.02-PM.jpeg",
-  "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-09-at-8.49.01-PM-2.jpeg",
-  "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-09-at-8.49.01-PM-1.jpeg",
-  "https://virendra.achtunglabs.co/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-09-at-8.49.01-PM.jpeg"
+  "/images/new_images/News Page Images/1.jpg",
+  "/images/new_images/News Page Images/2.jpg",
+  "/images/new_images/News Page Images/3.jpg",
+  "/images/new_images/News Page Images/4.jpg",
+  "/images/new_images/News Page Images/5.png",
+  "/images/new_images/News Page Images/6.png",
+  "/images/new_images/News Page Images/7.png",
+  "/images/new_images/News Page Images/8.jpg",
 ];
 
 export default function News() {

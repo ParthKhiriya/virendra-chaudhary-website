@@ -45,16 +45,8 @@ export default function Header() {
     <header className="fixed top-0 left-0 w-full z-50 p-4 md:p-6 pointer-events-auto">
       <div className="flex justify-between items-center max-w-7xl mx-auto relative z-50">
         
-        {/* Logo Initials - Heavy & Stylized */}
-        <div className={`text-4xl md:text-5xl font-black uppercase tracking-tighter drop-shadow-sm flex items-center transition-colors duration-300 ${
-          location.pathname.includes('/about') || location.pathname.includes('/news') 
-            ? 'text-white' 
-            : 'text-gray-900'
-        }`}>
-          <span>V</span>
-          <span className="text-primary mx-0.5">.</span>
-          <span>C</span>
-        </div>
+        {/* Empty div to maintain justify-between layout for absolute centered nav */}
+        <div className="w-10"></div>
         
         {/* Desktop Glassmorphism Nav Pill (Absolute Centered) */}
         <nav className="hidden md:flex items-center p-1.5 bg-white/80 backdrop-blur-xl border border-gray-200 rounded-full shadow-sm absolute left-1/2 -translate-x-1/2 w-max max-w-[60vw] overflow-x-auto overflow-y-hidden" style={{ scrollbarWidth: 'none' }}>

@@ -40,7 +40,7 @@ export default function CustomCursor() {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 w-6 h-6 bg-primary rounded-full pointer-events-none z-[9999] drop-shadow-md hidden md:block"
+      className="fixed top-0 left-0 w-6 h-6 bg-primary/40 rounded-full pointer-events-none z-[9999] drop-shadow-md hidden md:block"
       animate={{
         x: mousePosition.x - 12,
         y: mousePosition.y - 12,

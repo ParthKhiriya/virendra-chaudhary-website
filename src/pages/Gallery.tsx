@@ -4,33 +4,20 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, ZoomIn } from 'lucide-react';
 
 const galleryImages = [
-  // New Google Drive Images (Upper part)
-  // "/images/gallery/new/0L4A9379.webp",
-  "/images/gallery/new/0L4A9192.webp",
-  "/images/gallery/new/0L4A9216.webp",
-  "/images/gallery/new/0L4A9522.webp",
-  "/images/gallery/new/0L4A9235.webp",
-  "/images/gallery/new/0L4A9574.webp",
-  "/images/gallery/new/0L4A9626.webp",
-  "/images/gallery/new/A57I6762.webp",
-  "/images/gallery/new/A57I7745.webp",
-  "/images/gallery/new/A57I7762.webp",
-  "/images/gallery/new/A57I7791.webp",
-  "/images/gallery/new/A57I7818.webp",
-  "/images/gallery/new/A57I7852.webp",
-
-  // Original Images (Lower part)
-  "https://virendra.achtunglabs.co/wp-content/uploads/2017/11/27.png",
-  "https://virendra.achtunglabs.co/wp-content/uploads/2017/11/30.png",
-  "https://virendra.achtunglabs.co/wp-content/uploads/2017/11/25.png",
-  "https://virendra.achtunglabs.co/wp-content/uploads/2017/11/16.png",
-  "https://virendra.achtunglabs.co/wp-content/uploads/2017/11/15.png",
-  "https://virendra.achtunglabs.co/wp-content/uploads/2017/11/14.png",
-  "https://virendra.achtunglabs.co/wp-content/uploads/2017/11/13.png",
-  "https://virendra.achtunglabs.co/wp-content/uploads/2017/11/12.png",
-  "https://virendra.achtunglabs.co/wp-content/uploads/2017/11/11.png",
-  // "https://virendra.achtunglabs.co/wp-content/uploads/2017/11/9.png",
-  // "https://virendra.achtunglabs.co/wp-content/uploads/2017/11/1.png"
+  "/images/new_images/Gallery/0L4A9192.webp",
+  "/images/new_images/Gallery/0L4A9216.webp",
+  "/images/new_images/Gallery/0L4A9574.webp",
+  "/images/new_images/Gallery/0L4A9626.webp",
+  "/images/new_images/Gallery/743940635_17958356334170679_8457067372864711758_n.jpg",
+  "/images/new_images/Gallery/A57I7745.webp",
+  "/images/new_images/Gallery/A57I7762.webp",
+  "/images/new_images/Gallery/A57I7791.webp",
+  "/images/new_images/Gallery/A57I7852.webp",
+  "/images/new_images/Gallery/_Q9A8864.JPG",
+  "/images/new_images/Gallery/_Q9A8870.JPG",
+  "/images/new_images/Gallery/_Q9A8882.JPG",
+  "/images/new_images/Gallery/_Q9A8913.JPG",
+  "/images/new_images/Gallery/_Q9A8931.JPG",
 ];
 
 export default function Gallery() {

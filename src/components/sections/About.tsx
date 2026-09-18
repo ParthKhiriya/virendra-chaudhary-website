@@ -116,7 +116,7 @@ export default function About() {
           <div className="lg:col-span-5 w-full flex justify-center lg:justify-end mt-12 lg:mt-0" ref={imageRef}>
             <div tabIndex={0} className="relative w-full max-w-md aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl group cursor-pointer">
               <img 
-                src="https://virendra.achtunglabs.co/wp-content/uploads/2026/02/Untitled-design-36.png" 
+                src="/images/new_images/Introduction Image/temp_A57I7852.webp" 
                 alt="Virender Choudhary" 
                 tabIndex={0} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
